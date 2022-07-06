@@ -5,21 +5,19 @@ import type {
 } from "@docusaurus/types";
 import { Joi } from "@docusaurus/utils-validation";
 import https from "https";
-import path from "path";
 import { Parser } from "xml2js";
+import { FeedData, PLUGIN_ID } from "./shared";
 
-export type FeedData = Record<string, any>;
-export type PluginOptions = { feeds: Record<string, string> };
-export const PLUGIN_ID = "docusaurus-plugin-rss-feeds";
+type PluginOptions = { feeds: Record<string, string> };
 
 const xmlParser = new Parser({
   explicitArray: false,
 });
 
-export default function pluginRssFeeds(
+const pluginRssFeeds = (
   _: LoadContext,
   { feeds = {} }: PluginOptions
-): Plugin<FeedData> {
+): Plugin<FeedData> => {
   return {
     name: PLUGIN_ID,
 
@@ -53,17 +51,13 @@ export default function pluginRssFeeds(
       });
     },
 
-    configureWebpack() {
-      return {
-        resolve: {
-          alias: {
-            [`${PLUGIN_ID}$`]: path.resolve(__dirname, "index.js"),
-          },
-        },
-      };
+    getThemePath() {
+      return "../dist/theme";
     },
   };
-}
+};
+
+export default pluginRssFeeds;
 
 const httpsPromise = (
   options: Parameters<typeof https.request>[0]
@@ -100,12 +94,12 @@ const pluginOptionsSchema = Joi.object<PluginOptions>({
   feeds: Joi.object().pattern(Joi.string(), Joi.string()).optional(),
 });
 
-export function validateOptions({
+export const validateOptions = ({
   validate,
   options,
 }: OptionValidationContext<
   Partial<PluginOptions>,
   PluginOptions
->): PluginOptions {
+>): PluginOptions => {
   return validate(pluginOptionsSchema, options);
-}
+};

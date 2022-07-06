@@ -10,13 +10,13 @@
       "ESNext",
       "DOM"
     ],
-    "declaration": true,
+    "declaration": false,
     "declarationMap": false,
     "jsx": "react",
     "importHelpers": true,
     "noEmitHelpers": true,
     "incremental": true,
-    "tsBuildInfoFile": "./dist/.tsbuildinfo",
+    "tsBuildInfoFile": "dist/tsconfig.tsbuildinfo",
     "rootDir": "src",
     "outDir": "dist",
     /* Strict Type-Checking Options */
@@ -50,10 +50,13 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
-    "skipLibCheck": true, // @types/webpack and webpack/types.d.ts are not the same thing
+    "skipLibCheck": true,
   },
+  "include": [
+    "src", "src/types.d.ts"
+  ],
   "exclude": [
     "node_modules",
     "**/dist/**/*"
-  ]
+  ],
 }
