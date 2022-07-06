@@ -14,6 +14,8 @@ const xmlParser = new Parser({
   explicitArray: false,
 });
 
+export const themePath = "../dist/theme";
+
 const pluginRssFeeds = (
   _: LoadContext,
   { feeds = {} }: PluginOptions
@@ -52,7 +54,7 @@ const pluginRssFeeds = (
     },
 
     getThemePath() {
-      return "../dist/theme";
+      return themePath;
     },
   };
 };
@@ -72,7 +74,6 @@ const httpsPromise = (
       const { statusCode, headers } = response;
 
       response.on("data", (chunk) => (body += chunk.toString()));
-      response.on("error", reject);
       response.on("end", () => {
         if (statusCode! >= 200 && statusCode! <= 299) {
           return resolve({

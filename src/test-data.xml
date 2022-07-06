@@ -1,0 +1,868 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:webfeeds="http://webfeeds.org/rss/1.0"><channel><title>Developers on 1Password Blog</title><link>https://blog.1password.com/categories/developers/</link><description>Recent content in Developers on 1Password Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 24 Jun 2022 00:00:00 +0000</lastBuildDate><webfeeds:cover image="https://blog.1password.com/posts/2019/freedom-press/header.png"/><webfeeds:icon>https://blog.1password.com/img/icons/logo-small.svg</webfeeds:icon><webfeeds:logo>https://blog.1password.com/img/icons/logo-wide.svg</webfeeds:logo><webfeeds:accentColor>1a8cff</webfeeds:accentColor><webfeeds:related layout="card" target="browser"/><atom:link href="https://blog.1password.com/categories/developers/index.xml" rel="self" type="application/rss+xml"/><item><title>WWDC22: Everything that caught our attention</title><link>https://blog.1password.com/wwdc22-roundup/</link><pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate><author>Chris Brown</author><guid>https://blog.1password.com/wwdc22-roundup/</guid><description>
+&lt;img src='https://blog.1password.com/posts/2022/wwdc-2022-roundup/header.png' class='webfeedsFeaturedVisual' alt='WWDC22: Everything that caught our attention' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p class="introduction">Each June, Apple hosts a week-long Worldwide Developers Conference (WWDC) to showcase exciting features for their upcoming OS releases, help developers learn new APIs, unveil fresh hardware, and more.&lt;/p>
+&lt;p>This year’s WWDC followed a similar formula with previews of dramatic changes to the iPhone lock screen, improvements to how apps using SwiftUI can handle navigation, and the reveal of a redesigned MacBook Air powered by a new M2 processor.&lt;/p>
+&lt;p>When WWDC rolls around, we like to set aside time to brainstorm new ways to improve the 1Password experience for our customers. Before the week was over we were able to put together some exciting ideas to really elevate 1Password on iOS and macOS.&lt;/p>
+&lt;h2 id="log-in-with-passkeys">Log in with Passkeys&lt;/h2>
+&lt;p>Earlier this month, we announced that we had joined the FIDO Alliance along with companies like Apple to help build the future of authentication. This year, Apple revealed Passkeys which will leverage the WebAuthn protocol. We’re excited to see how this space develops and will continue to work with the Alliance to create safer, simpler, and faster login solutions for everyone.&lt;/p>
+&lt;h2 id="customizable-lock-screen-and-focus-filters">Customizable Lock Screen and Focus filters&lt;/h2>
+&lt;p>During its keynote event, Apple showed off a reimagined iPhone and iPad Lock Screen. When iOS 16 launches later this year, users will be able to add widgets, use customized fonts, intelligently place photo subjects in the foreground, and even have different configurations for various Focus modes.&lt;/p>
+&lt;p>This will allow us to display information about your vaults or items without asking you to unlock your device. For example, you could glance at a widget to quickly tell if 1Password is currently locked or unlocked.&lt;/p>
+&lt;p>
+&lt;video class="round shadow" style="display: block; margin: auto; padding: 0;"loop="loop" playsinline="" width="100%" alt='' controls>
+&lt;source src="https://blog.1password.com/posts/2022/wwdc-2022-roundup/lock_screen_widget_demo.mp4" type="video/mp4" />
+&lt;/video>
+&lt;/p>
+&lt;p>&lt;em>Example of a potential Lock Screen widget showing when 1Password is locked or unlocked.&lt;/em>&lt;/p>
+&lt;p>Beyond the Lock Screen, Apple is also giving developers the option to filter content based on which Focus mode is currently active. This means we can show certain vaults when Focus is set to Work and others when it is set to Personal.&lt;/p>
+&lt;p>
+&lt;video class="round shadow" style="display: block; margin: auto; padding: 0;"loop="loop" playsinline="" width="100%" alt='' controls>
+&lt;source src="https://blog.1password.com/posts/2022/wwdc-2022-roundup/focus_mode_demo.mp4" type="video/mp4" />
+&lt;/video>
+&lt;/p>
+&lt;p>&lt;em>Focus filters allow us to show only relevant items when users are at work or home.&lt;/em>&lt;/p>
+&lt;h2 id="programmatically-launch-safari-extensions">Programmatically launch Safari extensions&lt;/h2>
+&lt;p>Last year, Apple introduced Safari web extensions for iOS and iPadOS, allowing us to launch &lt;a href="https://blog.1password.com/1password-for-safari/">1Password for Safari&lt;/a> on Apple&amp;rsquo;s mobile devices. At WWDC22, we learned that we now have the ability to programmatically open the 1Password extension window. This means we can automatically open 1Password when you need it and save you some extra taps.&lt;/p>
+&lt;h2 id="welcome-improvements-to-messages">Welcome improvements to Messages&lt;/h2>
+&lt;p>iOS 16 will also bring some welcome features to the Messages app. Users will finally be able to edit, delete, and mark messages as unread. Deleting a message might sound useful when you want to temporarily share something like your WiFi password, but remember that 1Password’s &lt;a href="https://blog.1password.com/psst-item-sharing/">Item Sharing&lt;/a> is an even more convenient and secure solution.&lt;/p>
+&lt;p>
+&lt;video class="round shadow" style="display: block; margin: auto; padding: 0;"loop="loop" playsinline="" width="100%" alt='' controls>
+&lt;source src="https://blog.1password.com/posts/2022/wwdc-2022-roundup/messages_features.mp4" type="video/mp4" />
+&lt;/video>
+&lt;/p>
+&lt;h2 id="redesigned-macbook-air-with-m2-processor">Redesigned MacBook Air with M2 processor&lt;/h2>
+&lt;p>1Password for Mac has already been updated to run natively on Apple’s M1 chips and we’re excited to see how it will perform on the M2, which was officially unveiled during the WWDC22 keynote event&lt;/p>
+&lt;p>The first device that will use this new processor is the redesigned MacBook Air. In addition to the M2 chip, it features a design that closely resembles the most recent MacBook Pros with MagSafe charging, two Thunderbolt ports, a high-impedance headphone jack and two new finishes, Midnight and Starlight, to go along with the familiar Silver and Space Gray.&lt;/p>
+&lt;img src='https://blog.1password.com/posts/2022/wwdc-2022-roundup/macbookair.jpg' alt='Four MacBook Air laptops in silver, space grey, starlight, and midnight colors.' title='Four MacBook Air laptops in silver, space grey, starlight, and midnight colors.' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;h2 id="multitask-with-stage-manager">Multitask with Stage Manager&lt;/h2>
+&lt;p>Macs running macOS Ventura and M1-powered iPads using iPadOS 16 will be able to automatically organize apps and windows in a single view using the new Stage Manager. This will allow users to easily switch between apps with a simple click or tap.&lt;/p>
+&lt;img src='https://blog.1password.com/posts/2022/wwdc-2022-roundup/stagemanager.jpg' alt='An iPad showing two windowed apps and Stage Manager on the left-hand side of the screen.' title='An iPad showing two windowed apps and Stage Manager on the left-hand side of the screen.' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p>If you’re one of the lucky few testing 1Password 8 for iOS and iPadOS, you may have seen that we now support opening items in a second window. For users with older devices that do not support Stage Manager, this is a fantastic way to view and edit items in 1Password at the same time.&lt;/p>
+&lt;p>
+&lt;video class="round shadow" style="display: block; margin: auto; padding: 0;"loop="loop" playsinline="" width="100%" alt='' controls>
+&lt;source src="https://blog.1password.com/posts/2022/wwdc-2022-roundup/open-in-new-window.mp4" type="video/mp4" />
+&lt;/video>
+&lt;/p>
+&lt;p>&lt;em>Open an item in a new window to view items side by side.&lt;/em>&lt;/p>
+&lt;h2 id="a-new-regex-type-and-builder">A new Regex type and builder&lt;/h2>
+&lt;p>Regular expressions (regex) are very powerful—and often very cryptic—search patterns that allow you to find very complex combinations of words or characters in text. To even the most seasoned programmer a regular expression can be a headache to write. Thankfully, the latest version of the Swift language has a dedicated type for creating a regex that allows the compiler to help validate the expression.&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-lang-swift" data-lang="lang-swift">let example = &amp;quot;Hello, world. Welcome to WWDC22.&amp;quot;
+let regexLiteral = /Hello, (.+?). Welcome to WWDC(\d+)./
+if let result = try regexLiteral.wholeMatch(in: example) {
+print(&amp;quot;Name: \(result.1)&amp;quot;) // &amp;quot;Name: world&amp;quot;
+print(&amp;quot;Year: 20\(result.2)&amp;quot;) // &amp;quot;Year: 2022&amp;quot;
+}
+&lt;/code>&lt;/pre>&lt;p>In addition to literals, Apple introduced a more human-readable friendly way to create complex regular expressions.&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-lang-swift" data-lang="lang-swift">let word = OneOrMore(.word)
+let emailPattern = Regex {
+Capture {
+ZeroOrMore {
+word
+&amp;quot;.&amp;quot;
+}
+word
+}
+&amp;quot;@&amp;quot;
+Capture {
+word
+OneOrMore {
+&amp;quot;.&amp;quot;
+word
+}
+}
+}
+let text = &amp;quot;My email is my.name@example.com.&amp;quot;
+if let match = text.firstMatch(of: emailPattern) {
+let (wholeMatch, name, domain) = match.output
+// wholeMatch is &amp;quot;my.name@example.com&amp;quot;
+// name is &amp;quot;my.name&amp;quot;
+// domain is &amp;quot;example.com&amp;quot;
+}
+&lt;/code>&lt;/pre>&lt;p>These new features will allow us to more easily create search patterns for complex situations, like scanning credit card information into 1Password.&lt;/p>
+&lt;p>
+&lt;video class="round shadow" style="display: block; margin: auto; padding: 0;"loop="loop" playsinline="" width="100%" alt='' controls>
+&lt;source src="https://blog.1password.com/posts/2022/wwdc-2022-roundup/credit_card_demo.mp4" type="video/mp4" />
+&lt;/video>
+&lt;/p>
+&lt;p>&lt;em>Using the new Regex type to search for credit card information.&lt;/em>&lt;/p>
+&lt;h2 id="wrapping-it-up">Wrapping it up&lt;/h2>
+&lt;p>WWDC was a great opportunity for us to learn about what Apple has been working on and how we can use these announcements to build a simpler, smarter, and more secure 1Password. We’ll be heads down and working hard over the next few months to ensure 1Password is the best it can be on iOS 16, iPadOS 16, and macOS Ventura when they debut later this year.&lt;/p></description></item><item><title>Introducing 1Password for Visual Studio Code</title><link>https://blog.1password.com/1password-visual-studio-code/</link><pubDate>Wed, 22 Jun 2022 00:00:00 +0000</pubDate><author>Jody Heavener</author><guid>https://blog.1password.com/1password-visual-studio-code/</guid><description>
+&lt;img src='https://blog.1password.com/posts/2022/1password-visual-studio-code/header.png' class='webfeedsFeaturedVisual' alt='Introducing 1Password for Visual Studio Code' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p class="introduction">In writing software, we’re used to embedding secrets and other configurable values right in the codebase. They might be Stripe keys to power your online shop, webhooks for a custom Slack bot, a Docker username and password for a CI config, AWS credentials, or an API token and host to set up 1Password &lt;a href="https://developer.1password.com/docs/connect/">Connect&lt;/a>.&lt;/p>
+&lt;p>Secrets are used &lt;em>everywhere&lt;/em> in our code. Sometimes, though, we forget when we’ve been using real secrets in our work. Maybe there’s a leftover token you dropped in to build that one feature, or maybe you didn’t delete the &lt;code>.env&lt;/code> file you set up to test drive the app. Now you’ve got to rotate your secrets because you accidentally committed and pushed sensitive values for the whole world to see. Yikes.&lt;/p>
+&lt;p>We’ve all been there. That’s why I’m delighted that I get to announce the launch of the all-new &lt;a href="https://developer.1password.com/docs/vscode">1Password for VS Code extension&lt;/a>.&lt;/p>
+&lt;h2 id="go-ahead-commit-your-secrets-references">Go ahead, commit your &lt;del>secrets&lt;/del> references&lt;/h2>
+&lt;p>With &lt;a href="https://1password.com/products/secrets/">1Password Secrets Automation&lt;/a>, the 1Password Developer Products team introduced the concept of &lt;a href="https://developer.1password.com/docs/cli/secrets-reference-syntax">secret references&lt;/a>. It starts by storing a sensitive value, such as an API credential or client ID, in 1Password. That item and the field you&amp;rsquo;d like to get the value from can then be retrieved through a special &lt;code>op://&lt;/code> URL scheme that 1Password&amp;rsquo;s tooling knows how to parse. It’s made up of three parts: vault, item, and field. This is known as a “secret reference”.&lt;/p>
+&lt;p>
+&lt;img src="https://blog.1password.com/posts/2022/1password-visual-studio-code/sr_light.png" alt="1Password Secret Reference example consisting of vault, item, and field" title="1Password Secret Reference example consisting of vault, item, and field" class="c-featured-image light"/>
+&lt;img src="https://blog.1password.com/posts/2022/1password-visual-studio-code/sr_dark.png" alt="1Password Secret Reference example consisting of vault, item, and field" title="1Password Secret Reference example consisting of vault, item, and field" class="c-featured-image dark"/>
+&lt;/p>
+&lt;p>Now, instead of using a real value in your configs, environment variable files, or anywhere else in the codebase, just drop in the secret reference in VS Code. When you do, you can rest easy knowing that the real value will never accidentally make its way into your codebase.&lt;/p>
+&lt;p>The best part? Through our &lt;a href="https://developer.1password.com/">suite of tools and integrations&lt;/a>, you can work with references in both local and deployed environments.&lt;/p>
+&lt;p>To help make sure you&amp;rsquo;re not accidentally leaving secrets in your code, you can move them over to 1Password with just a couple clicks. The extension uses a series of &lt;a href="https://developer.1password.com/docs/vscode/#secret-detection">secret detection&lt;/a> techniques to look for values that might be sensitive. With these matches, it makes inline suggestions to store them in 1Password, automatically replacing them with secret references.&lt;/p>
+&lt;p>
+&lt;video class="round shadow" style="display: block; margin: auto; padding: 0;"loop="loop" playsinline="" width="100%" alt='' controls>
+&lt;source src="https://blog.1password.com/posts/2022/1password-visual-studio-code/Secret_Detection.mp4" type="video/mp4" />
+&lt;/video>
+&lt;/p>
+&lt;p>Secret reference integration doesn’t stop there. You can hover a reference to inspect the item and field details, click it to open the item in the desktop app, and even &lt;a href="https://developer.1password.com/docs/vscode/#inspect-and-preview-secret-references">preview the real values&lt;/a> of an entire file full of references.&lt;/p>
+&lt;p>Beyond secret detection suggestions, 1Password for VS Code makes it easy to &lt;a href="https://developer.1password.com/docs/vscode/#get-values-from-1password">retrieve items&lt;/a> for use in your code, as well as &lt;a href="https://developer.1password.com/docs/vscode/#save-in-1password">store any bits of code&lt;/a> you’d like in 1Password. If you’ve got multiple values you want stored in the same item – perhaps a username, password, and email – it supports that as well. Just select each value and run the “Save in 1Password” command.&lt;/p>
+&lt;p>
+&lt;video class="round shadow" style="display: block; margin: auto; padding: 0;"loop="loop" playsinline="" width="100%" alt='' controls>
+&lt;source src="https://blog.1password.com/posts/2022/1password-visual-studio-code/Save_in_1Password.mp4" type="video/mp4" />
+&lt;/video>
+&lt;/p>
+&lt;h2 id="built-using-tools-available-to-everyone">Built using tools available to everyone&lt;/h2>
+&lt;p>I’ll let you in on a little secret: we didn’t plan to build this extension. It wasn’t requested by our developer community, and wasn’t part of any roadmap. Instead this extension began as a side project for myself. I wanted to scratch my own itch and integrate 1Password more closely into my development workflow, and to generally &lt;a href="https://developer.1password.com/">learn more about developing with 1Password&lt;/a>.&lt;/p>
+&lt;p>So you can imagine my excitement when, after a quick demo at an internal call, I was invited to polish it up and get it slated for release.&lt;/p>
+&lt;p>To my delight, after demoing the extension and then going on vacation, &lt;a href="https://www.youtube.com/watch?v=hghKTE_pUaQ">Dave posted a video&lt;/a> of the presentation from his &lt;a href="https://blog.1password.com/1password-cli-2_0/">CLI launch blog post&lt;/a> and it was met with some pretty wild enthusiasm from the developer community. There was even some love for it at our &lt;a href="https://www.reddit.com/r/1Password/comments/ui9exd/were_the_team_behind_1password_8_for_mac_ask_us/i7fyfp9/">1Password 8 for Mac Reddit AMA&lt;/a>:&lt;/p>
+&lt;img src="https://blog.1password.com/posts/2022/1password-visual-studio-code/reddit_ama.png" alt="Reddit comment from user arnebr asking if the VS Code plugin will be live soon" title="Reddit comment from user arnebr asking if the VS Code plugin will be live soon" class="c-featured-image"/>
+&lt;p>Although not a goal from the outset, an interesting aspect of this project is that it’s built using only tools available to the public – there’s nothing internal or proprietary powering the features of the extension. We’ve even &lt;a href="https://github.com/1Password/op-vscode">open-sourced the whole project on our GitHub&lt;/a>, so if you want to help iterate on it or report an issue, that’s a great place to start.&lt;/p>
+&lt;aside class="c-technical-aside-box c-technical-aside-box--background">
+&lt;div class="c-technical-aside-box__description">
+&lt;p>VS Code extensions run in a Node environment, and we wanted to interact with the new CLI. So we built and open-sourced an entirely new package for doing exactly this: &lt;a href="https://github.com/1Password/op-js">op-js&lt;/a>. It wraps the CLI with a simple-to-use JavaScript interface and ships with TypeScript declarations, making 60+ commands, including those that support biometrics unlock, available to your Node-based application.&lt;/p>
+&lt;/div>
+&lt;/aside>
+&lt;p>Ultimately my hope is that this extension demonstrates some of the neat ways you can extend the power of 1Password by building your own integrations, whether it be for yourself or others. And you should &lt;a href="https://blog.1password.com/developers-deserve-great-ux/">have fun doing it&lt;/a>. We’re in early days here, with plenty more developer offerings coming down the line.&lt;/p>
+&lt;p>I’d love to hear what you think, and we’ll be iterating on the extension as feedback rolls in. Learn more about &lt;a href="https://developer.1password.com/docs/vscode">1Password for VS Code&lt;/a> and our other developer tools by checking out our &lt;a href="https://developer.1password.com/">developer portal&lt;/a>. While you’re there, consider joining our &lt;a href="https://join.slack.com/t/1password-devs/shared_invite/zt-15k6lhima-GRb5Ga~fo7mjS9xPzDaF2A">Developer Slack workspace&lt;/a>, where you’ll find myself and others on the Developer Products team who are eager to hear how you’re incorporating 1Password into your development workflow. And if you’re building something cool, be sure to tag it &lt;a href="https://twitter.com/hashtag/buildwith1password?f=live">#BuildWith1Password&lt;/a>!&lt;/p>
+&lt;p>Finally, we owe a tremendous debt of gratitude to &lt;a href="https://www.linkedin.com/in/mikeselander/">Mike Selander&lt;/a>, &lt;a href="https://www.linkedin.com/in/chrisdunnbirch/">Chris Dunn-Birch&lt;/a>, &lt;a href="https://www.linkedin.com/in/florisvdg/">Floris van der Grinten&lt;/a>, the incredibly helpful folks over in the &lt;a href="https://github.com/1Password/op-vscode/blob/main/CONTRIBUTING.md#acknowledgments">VS Code Extension community&lt;/a>, and so many more for providing endless help and guidance while working on this project. Thank you!&lt;/p></description></item><item><title>Go ahead, delete your .env.example file</title><link>https://blog.1password.com/delete-your-example-env-file/</link><pubDate>Wed, 08 Jun 2022 00:00:00 +0000</pubDate><author>Simon Barendse</author><guid>https://blog.1password.com/delete-your-example-env-file/</guid><description>
+&lt;img src='https://blog.1password.com/posts/2022/delete-your-example-env-file/header.png' class='webfeedsFeaturedVisual' alt='Go ahead, delete your .env.example file' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p class="introduction">When we develop software, it’s common practice for engineers to require system configuration in order to run a program. We specify instructions on how to set up your own local environment in a .env.example file or README.md file.&lt;/p>
+&lt;p>For every project that we work on and for every configuration change of those projects, we need to do manual work to keep our local environments up to date so they continue to work. Often, this is a struggle. Also, aren’t we all sick of hearing “it works on my machine”?&lt;/p>
+&lt;p>Why are we creating and maintaining this configuration manually? The reason: our required configuration contains sensitive values that should be kept secret. For this reason, the environment file that’s consumed by our applications is added to the .gitignore file, in order to avoid it being synced to source control.&lt;/p>
+&lt;p>To date, there is no common practice to collaborate on and share these sensitive values securely and effectively. We’re either sharing the values insecurely (via email and other messaging apps), or adding to the hassle of configuring our environments by doing our own encryption inside source control using tools like GPG (do you also always forget which command to use?). Or, we manually copy sensitive values, for example by pairing with a colleague that already has the sensitive value on their machine.&lt;/p>
+&lt;p>Why can’t we have a way to collaborate on configuration both effectively and securely? With the launch of &lt;a href="https://1password.com/developers/">1Password Developer Tools&lt;/a>, let’s take a closer peek at an alternative way to collaborate on configuration to remove the hassle – and securely store and synchronize the sensitive values that we should keep secret.&lt;/p>
+&lt;h2 id="a-new-way-to-collaborate-on-environment-configuration">A new way to collaborate on environment configuration&lt;/h2>
+&lt;p>Instead of keeping the environment configuration out of source control, why don’t we just remove the sensitive values, so that we can enjoy all the benefits of collaboration that source control provides us?&lt;/p>
+&lt;p>This is exactly what 1Password now allows you to do. You store the sensitive values in 1Password and replace those same values in your environment configuration with references to where these values are stored in 1Password. &lt;a href="https://1password.com/downloads/command-line/">1Password CLI&lt;/a> loads these values from 1Password when and where you need them.&lt;/p>
+&lt;p>Since the environment configuration no longer contains sensitive data, you can check it into source control, collaborate on it using pull requests and every developer working on the project automatically receives the configuration they need when they check out a version of your source code.&lt;/p>
+&lt;img src='https://blog.1password.com/posts/2022/delete-your-example-env-file/stripe_integration.png' alt='Github commit page authored by Simon Barendse to push changes to .env file including Striple publishable key and secret key.' title='Github commit page authored by Simon Barendse to push changes to .env file including Striple publishable key and secret key.' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;h2 id="accelerate-onboarding">Accelerate onboarding&lt;/h2>
+&lt;p>When new folks join the team or start working on a new project, there’s no longer a requirement to configure a local environment. Their manager can add them to the 1Password &lt;a href="https://support.1password.com/custom-groups/">user group&lt;/a> for the team they just joined, which grants them access to the secrets they need to do their job. Instead of spending their first day struggling to get their environment configured, all the new developer needs to do is clone the repository and they’re good to go.&lt;/p>
+&lt;p>
+&lt;video class="round shadow" style="display: block; margin: auto; padding: 0;"loop="loop" playsinline="" width="100%" alt='' controls>
+&lt;source src="https://blog.1password.com/posts/2022/delete-your-example-env-file/git-cloning.mp4" type="video/mp4" />
+&lt;/video>
+&lt;/p>
+&lt;p>Let’s go a step further and automate access provisioning through the 1Password CLI so the new team member doesn’t need to be manually added to the user group by the manager. For example, one can grant access automatically when teammates are added to the GitHub project for which they require these secrets.&lt;/p>
+&lt;h2 id="remove-interruptions-from-your-day-to-day">Remove interruptions from your day-to-day&lt;/h2>
+&lt;p>When environment configuration is managed manually, your development workflow is interrupted when a colleague merges a change that requires configuration. Then, you have to redirect your attention to reproducing the environment of your colleague to fix your build, before you can continue developing another feature, costing the team valuable time.&lt;/p>
+&lt;img src='https://blog.1password.com/posts/2022/delete-your-example-env-file/environment_variables.png' alt='List of user environment variables with their name and corresponding value.' title='List of user environment variables with their name and corresponding value.' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p>Using the new workflow enabled by 1Password, you no longer need to manually synchronize your environment to keep up with the state of the code-base. When your teammate makes a change to the codebase that requires a configuration change, they commit the required config change in the environment file together with the code changes. When you pull these new changes, you’re good to go. All the configuration is synchronized through source control and you never have a broken environment anymore. 🚀&lt;/p>
+&lt;p>The file you’re using to configure the program when you’re developing the feature is the exact same file that you’ll check into source control and share with your colleagues. This ensures that the configuration is reproducible and complete. There’s no longer an additional .env.example or README.md file that you’ll need to separately update (and can forget to do) to inform your colleagues about the necessary changes.&lt;/p>
+&lt;h2 id="achieve-devprod-parity">Achieve Dev/Prod parity&lt;/h2>
+&lt;p>To prevent errors occuring in production that weren’t present during development, the &lt;a href="https://12factor.net/dev-prod-parity">dev/prod parity factor&lt;/a> of the twelve factor app states you should keep development, staging and production as similar as possible.&lt;/p>
+&lt;p>For security, secrets should vary between the different environments. As traditional &lt;code>.env&lt;/code> files contain the plaintext secrets, they aren&amp;rsquo;t kept in source control. And to protect the production environment, access to the secret values is typically restricted to a smaller group (e.g. Operations or Sr. Devs). When (other) developers make changes to the application code that require a configuration change, they cannot edit the environment file that specifies the configuration the application requires in production. This friction can lead to missing configuration in production, which causes the application to not work properly, or not work at all in production.&lt;/p>
+&lt;p>1Password secret references allow to use a single configuration file for all environments. And because the configuration file no longer contains the secrets, all developers working on the application are allowed to access it and can write and review the configuration, without requiring access to the secrets themselves. The operation team uses the same configuration file for production as the developers do during development. They use the specification the developers have created to pass the intended credentials to the application. The configuration file serves as a shared contract between developers and operation engineers.&lt;/p>
+&lt;pre tabindex="0">&lt;code>DB_USER = op://my-project-$env/database/username
+DB_PASSWORD = op://my-project-$env/database/password
+STRIPE_PUBLISHABLE_KEY = op://my-project-$env/stripe/publishable-key
+STRIPE_SECRET_KEY = op://my-project-$env/stripe/secret-key
+&lt;/code>&lt;/pre>&lt;p>&lt;a href="https://blog.1password.com/developers-deserve-great-ux/">Developers deserve great ux, too&lt;/a>. They run the application with the required secrets with a touch of their fingerprint on their local workstation. In production, the operations team will use &lt;a href="https://developer.1password.com/docs/connect/">1Password Connect&lt;/a> as a back-end to get optimal low-latency and control in their infrastructure.&lt;/p>
+&lt;h2 id="improve-security">Improve security&lt;/h2>
+&lt;p>Did you notice that throughout this new workflow the environment file on your system never has the plaintext secrets? The 1Password CLI passes the secrets to just the process running your application, adding to the security of your workflow. The secrets are only kept in memory and never written to disk.&lt;/p>
+&lt;p>For secrets protecting our development environments, because there was such a hassle synchronizing updates with all devs working on the project, we have come to accept that we (almost) never rotate these secrets.&lt;/p>
+&lt;p>In too many cases, former teammates &lt;a href="https://1password.com/resources/2021-state-of-secure-access-report/">can still access these environments&lt;/a>. Because this new way of collaborating on the environment configuration removes the manual steps required to synchronize changes, we can now rotate secrets as many times as we&amp;rsquo;d like without interrupting the developers working with these secrets. Note that this is especially important to do for development workflows that connect to production infrastructure, which tend to be more sensitive. Think for example about configuration for operations and configuration for infrastructure as code projects.&lt;/p>
+&lt;h2 id="get-started-using-1password-environment-configuration-in-your-projects-today">Get started using 1Password environment configuration in your projects today&lt;/h2>
+&lt;p>We’re curious what you think about this new way of collaborating on development environment configuration. How will you be using this? And where should we go with this next? &lt;a href="https://1password.community/categories/cli">Let us know in the community&lt;/a>!&lt;/p>
+&lt;p>Collaboration on environment configuration is just one of the many improvements we’re creating to make developers’ daily lives easier and more secure. Keep an eye out for more updates and &lt;a href="https://1password.com/dev-subscribe/">subscribe to our developer newsletter&lt;/a> to be notified of new developments.&lt;/p>
+&lt;p>To upgrade your team&amp;rsquo;s productivity and security today, &lt;a href="https://developer.1password.com/docs/cli/secrets-environment-variables">get started with environment configuration using 1Password&lt;/a>.&lt;/p></description></item><item><title>1Password for SSH changed the way I work</title><link>https://blog.1password.com/1password-ssh-changed-how-i-work/</link><pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate><author>K.J. Valencik</author><guid>https://blog.1password.com/1password-ssh-changed-how-i-work/</guid><description>
+&lt;img src='https://blog.1password.com/posts/2022/1password-ssh-changed-how-i-work/header.png' class='webfeedsFeaturedVisual' alt='1Password for SSH changed the way I work' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p class="introduction">&lt;a href="https://blog.1password.com/1password-ssh-agent/">1Password for SSH&lt;/a> was shared with the world last month. I have been using it since it was available for internal beta. I knew it would improve my endpoint security. I didn’t expect it to change &lt;del>the way I generated, stored and used SSH keys&lt;/del> the way I work.&lt;/p>
+&lt;p>Let me take a step back.&lt;/p>
+&lt;p>The first time I used SSH, I connected my college’s &lt;a href="https://www.csee.umbc.edu/courses/undergraduate/341/fall04/hood/notes/ssh/">global lab linux server&lt;/a> with &lt;a href="https://www.putty.org/">PuTTY&lt;/a>. I used a username and password to authenticate and never really appreciated &lt;a href="https://datatracker.ietf.org/doc/html/rfc4253">the magic that made it all work&lt;/a>. It was a step away from the familiar world of FTP and RDP.&lt;/p>
+&lt;p>SSH later became an integral part of my developer experience when my job switched from &lt;a href="https://subversion.apache.org/">Subversion&lt;/a> to &lt;a href="https://lwn.net/Articles/165127/">Git&lt;/a>. I was a Jr. Developer at the time and struggled to generate an SSH key. Another developer on the team generated an RSA key pair for me and shared it on a thumb drive. It was some years later before I realized &lt;a href="https://www.freebsd.org/news/2012-compromise/">this was less than ideal&lt;/a>.&lt;/p>
+&lt;p>Eventually, I fell into a routine. I would get a new laptop, generate a private key – sometimes I would even use a &lt;a href="https://www.ssh.com/academy/ssh/passphrase">passphrase&lt;/a> – and upload the new key to all the services I used (GitHub, VPS, etc.). I used the one-key-per-device pattern and repeated the process for my phone and other devices. Occasionally, I’d pull a device from cold storage for something I forgot about.&lt;/p>
+&lt;p>The problem was that each SSH key represented one of my devices; it had no purpose attached to it. I used the same keys for work, open source contributions, file servers and a lot more. When I unlocked a key for one use, I unlocked it for all uses.&lt;/p>
+&lt;p>&lt;em>1Password for SSH has entered the chat&lt;/em>&lt;/p>
+&lt;p>The &lt;a href="https://developer.1password.com/docs/ssh/">1Password SSH Agent&lt;/a> has a stricter authorization model than the OpenSSH Agent&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> defaults&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>. Instead of a key either being available or unavailable, a key has an authorized session. An authorized session consists of the key pair and either a terminal session or application. I wanted to be able to deliberately authorize a set of actions for my current context (e.g., work or open source).&lt;/p>
+&lt;p>Thus, a new way of working.&lt;/p>
+&lt;p>I generated a new key pair for each of my use cases. &lt;a href="https://support.1password.com/getting-started-browser/">1Password in the browser&lt;/a> made this really easy by autofilling the new key in the GitHub and Gitlab public key forms. Now, when it’s time to get to work, I open my terminal and run a git fetch. 1Password prompts for my fingerprint and I approve the usage of my Work SSH key.&lt;/p>
+&lt;img src='https://blog.1password.com/posts/2022/1password-ssh-changed-how-i-work/1Password_SSH_authorization_focused.png' alt='Focused 1Password for Mac Touch ID authentication window displaying the text &amp;#39;1Password is trying to allow iTerm2 to use the key Work SSH key for SSH&amp;#39;' title='Focused 1Password for Mac Touch ID authentication window displaying the text &amp;#39;1Password is trying to allow iTerm2 to use the key Work SSH key for SSH&amp;#39;' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p>I’m not prompted again while actively using my laptop. When it’s time to switch to an &lt;a href="https://github.com/neon-bindings/neon">open source project&lt;/a>, I’m seamlessly prompted for my GitHub key.&lt;/p>
+&lt;img src='https://blog.1password.com/posts/2022/1password-ssh-changed-how-i-work/1Password_SSH_unfocused.png' alt='Unfocused 1Password for Mac Touch ID authentication window displaying the text &amp;#39;1Password is trying to allow iTerm2 to use the key GitHub SSH key for SSH&amp;#39;' title='Unfocused 1Password for Mac Touch ID authentication window displaying the text &amp;#39;1Password is trying to allow iTerm2 to use the key GitHub SSH key for SSH&amp;#39;' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p>A little later, when I need to update my blog, I pop open a new terminal tab and start an SSH session. I forward my SSH Agent with &lt;code>ssh -A&lt;/code> so that I can perform a &lt;code>git pull&lt;/code> while I’m there&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>. When I’m done, I &lt;code>exit &lt;/code>the terminal session, deauthorizing it from the 1Password SSH Agent.&lt;/p>
+&lt;p>Now, generating SSH keys is no longer part of my new device flow! All of my SSH keys are saved in 1Password and synchronized across my devices.&lt;/p>
+&lt;img src='https://blog.1password.com/posts/2022/1password-ssh-changed-how-i-work/SSH_key_item_in_1Password.png' alt='Item with the title &amp;#39;Work SSH Key&amp;#39; in 1Password' title='Item with the title &amp;#39;Work SSH Key&amp;#39; in 1Password' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p>I’m really excited for Git’s recent addition of &lt;a href="https://github.com/git/git/blob/master/Documentation/RelNotes/2.34.0.txt">commit signing with SSH keys&lt;/a>. It already &lt;a href="https://git-scm.com/docs/git-config#Documentation/git-config.txt-gpgformat">works with 1Password SSH&lt;/a> and I can’t wait for &lt;a href="https://github.com/github/feedback/discussions/7744">GitHub&lt;/a> and &lt;a href="https://gitlab.com/gitlab-org/gitlab/-/issues/343879">Gitlab&lt;/a> to support verification!&lt;/p>
+&lt;section class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1" role="doc-endnote">
+&lt;p>&lt;a href="https://www.openssh.com/agent-restrict.html">SSH agent restriction&lt;/a> looks really cool!&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2" role="doc-endnote">
+&lt;p>Similar functionality is available with &lt;code>ssh-add -c&lt;/code>.&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:3" role="doc-endnote">
+&lt;p>Eventually I’ll get around setting up a &lt;a href="https://docs.github.com/en/actions">GitHub Action&lt;/a>. At least, that’s what I tell myself.&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/section></description></item><item><title>Building communities for developers – an interview with Jeremiah Peschka of Stack Overflow</title><link>https://blog.1password.com/stack-overflow-developers-interview/</link><pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate><author>Stacey Harris</author><guid>https://blog.1password.com/stack-overflow-developers-interview/</guid><description>
+&lt;img src='https://blog.1password.com/posts/2022/stack-overflow-developers-interview/header.png' class='webfeedsFeaturedVisual' alt='Building communities for developers – an interview with Jeremiah Peschka of Stack Overflow' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p class="introduction">Michael Fey, VP of Engineering at 1Password, recently interviewed Jeremiah Peschka, staff software developer at &lt;a href="https://stackoverflow.com/">Stack Overflow&lt;/a>, on our &lt;a href="https://randombutmemorable.simplecast.com/">Random But Memorable&lt;/a> podcast.&lt;/p>
+&lt;p>Stack Overflow is an extensive online community where you can get answers to all your technical questions. Michael and Jeremiah dive into why building communities for developers is so important and how code is reshaping our world. Check out the highlights below, or &lt;a href="https://randombutmemorable.simplecast.com/episodes/puzzle-solving-developer-community">listen to the full interview&lt;/a>.&lt;/p>
+&lt;div class="c-simplecast-embed">
+&lt;iframe class="c-simplecast-embed__iframe" title="1Password Random but Memorable Podcast" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/4d4c2599-bc2a-44c6-834a-fa501b183489?dark=false">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;strong>Michael Fey: I&amp;rsquo;m sure most of our listeners are aware of what Stack Overflow is and have taken code snippets and shipped it out to production systems, but for those who might not know, can you give us a quick overview?&lt;/strong>&lt;/p>
+&lt;p>Jeremiah Peschka: Stack Overflow is the finest repository of copy and paste snippets you can find. It’s where users can ask questions and get answers to questions. We have a lot of different sites where there are different communities – like sci-fi, cooking, and woodworking – where you can focus on more than just general code. You can dig into detailed hobbies you have, or detailed code like dba.stackexchange, or Server Fault.&lt;/p>
+&lt;p>&lt;strong>MF: With 55% of developers visiting Stack Overflow every day and 80% visiting at least once a week, what kinds of real world impacts have the public and private forums had?&lt;/strong>&lt;/p>
+&lt;p>JP: So there&amp;rsquo;s a private version of Stack Overflow – &lt;a href="https://stackoverflow.co/teams/pricing/">Stack Overflow for Teams&lt;/a> – but we also have our own private Stack install and that has replaced asking questions in the chat. Instead, I go to our internal Stack Overflow and search for it there. Sometimes I&amp;rsquo;ll find an article and if there are edits I can go and look at how it has changed over time and I can look at comments that other people have left. It&amp;rsquo;s a really good way for people to edit over time and add a lot more context as we change and grow. It allows for a lot of collaboration.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>&amp;ldquo;We make it easy to get answers to questions.&amp;quot;&lt;/em>&lt;/p>
+&lt;/blockquote>
+&lt;p>If I don&amp;rsquo;t find something, I will ask a question on the internal site. If it&amp;rsquo;s not about Stack Overflow&amp;rsquo;s internal code, I can ask on the public site and then I can post that link internally in chat and also put it on Twitter and say: &amp;ldquo;Lazy web, help me solve my problems. Coding is hard today.&amp;rdquo;&lt;/p>
+&lt;p>&lt;strong>MF: Stack Overflow is one of those sites that has really stood the test of time. It continues to be a community that self perpetuates and continues to grow and be valuable and held in high regard within the wider developer community.&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>What do you think has led to that longevity? What is the secret sauce at Stack Overflow that saved it from being a fad?&lt;/strong>&lt;/p>
+&lt;p>JP: At Stack Overflow we make it easy to get answers to questions. Anyone can ask and answer questions and that’s what&amp;rsquo;s made it really helpful. It&amp;rsquo;s a fun community where you can collaborate with other people and help build better answers to questions or even rephrase questions and make questions better.&lt;/p>
+&lt;p>&lt;strong>MF: Why do you think it&amp;rsquo;s important to foster and build communities in the dev space and what do you see as the obvious benefits?&lt;/strong>&lt;/p>
+&lt;p>JP: One big thing is it&amp;rsquo;s a force multiplier. If I were to ask you in private “how do I do X with 1Password”, you could give me a great answer, but it goes no further. However, if I ask “how do I do X with 1Password” on Stack Overflow, it means I get that same great answer, but everybody else also gets to see it, and they can also contribute to the conversation.&lt;/p>
+&lt;p>It makes everything accessible to as many people as possible. It also makes the onboarding of really complex ideas a lot easier. Documentation only gets you so far because when you&amp;rsquo;ve written your own code you know all of your own assumptions, so why should you write them down?&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>&amp;ldquo;The best answers I&amp;rsquo;ve ever found and the best ones I&amp;rsquo;ve provided are about taking someone on the journey with you.&amp;quot;&lt;/em>&lt;/p>
+&lt;/blockquote>
+&lt;p>Stack Overflow helps people write better questions. We encourage you to tell us what you&amp;rsquo;ve done, what you&amp;rsquo;ve tried, and all the assumptions you have. And so by writing all that stuff down in the question, it helps onboard people into that knowledge space that you&amp;rsquo;re in. And likewise, the best answers I&amp;rsquo;ve found are onboarding people into that solution. That&amp;rsquo;s a less obvious benefit, but it&amp;rsquo;s a way to bring people with you and share your expertise.&lt;/p>
+&lt;p>The best answers I&amp;rsquo;ve ever found and the best ones I&amp;rsquo;ve provided are about taking someone on the journey with you. It&amp;rsquo;s about saying, &amp;lsquo;I understand where you are over there in the hinterlands of suffering, come towards the richness of the valley of success.&amp;rsquo;&lt;/p>
+&lt;p>&lt;strong>MF: I want to spin over to the security side of things. It feels like security and secure coding practices have more of the mind share these days in the development community. Are you also seeing that trend and how is Stack Overflow helping those in the security space?&lt;/strong>&lt;/p>
+&lt;p>JP: People are really incorporating security into how they think about programs and how we build things today. It’s so important and you can no longer rely on a well configured firewall and a password form to protect your users' data. Security is really, really hard. Part of the reason why that discussion is coming up is because a lot of security revolves around understanding the nuance of what you&amp;rsquo;re working with in a really deep way.&lt;/p>
+&lt;p>One of the ways Stack Overflow helps is by making it easier to find this kind of content. It lets us have that conversation around nuance and the better ideas tend to rise to the top. It also lets people put in caveats and point out nuances others need to be aware of. Stack Overflow helps developers understand some of those issues and nuances and bring that back into their own projects.&lt;/p>
+&lt;p>&lt;strong>MF: Since the start of the pandemic, with the increase in remote work, the number of cybersecurity questions has soared on Stack Overflow. Is that something you’re continuing to see and do you think the pandemic contributed to the rise, or was this trend already in progress?&lt;/strong>&lt;/p>
+&lt;p>JP: People were becoming more and more aware that security is really important and that it&amp;rsquo;s very hard to secure an application that was never designed to be secured. That’s part of what&amp;rsquo;s driving it. As an industry, we’re becoming more aware that these applications should be secured by default.&lt;/p>
+&lt;p>When everyone worked in an office their laptops and desktops were locked down and very tightly controlled by a security department or IT, or controlled by asset tags and everything else. Suddenly, when everyone started working from home, you have people working from their computer that is eight years old that they bought at Costco and it has who knows what on it and that&amp;rsquo;s now expected to connect to the &lt;a href="https://blog.1password.com/how-a-vpn-works/">VPN&lt;/a> and perform just fine.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>&amp;ldquo;We were suddenly thrust into a world where we have to be more thoughtful about how we approach security.&amp;quot;&lt;/em>&lt;/p>
+&lt;/blockquote>
+&lt;p>Now you have these untrusted devices connecting to the network and internal applications that were never intended to run on untrusted devices. So we were suddenly thrust into a world where we have to be more thoughtful about how we approach security.&lt;/p>
+&lt;p>There’s definitely more awareness about security now. I did some research with our data people and the trend did definitely go up at the beginning of the pandemic and it&amp;rsquo;s continued to be relatively high. It seems like people are continuing to think about how to secure applications.&lt;/p>
+&lt;p>&lt;strong>MF: That&amp;rsquo;s good to hear. Do you feel code is reshaping our world in 2022? And if so, how?&lt;/strong>&lt;/p>
+&lt;p>JP: Code is making it easier for people to work with data and to understand the world around them. When I was in graduate school I attended Oregon Programming Languages Summer School and one of the speakers was Andy Gordon who worked at Microsoft Research at the time. He brought up that Excel, in his mind, is the most used programming tool in the world. Code isn&amp;rsquo;t just programs in Java or C#, but it&amp;rsquo;s also things like Excel, SQL, and R. All these tools make it easier for people to understand the world.&lt;/p>
+&lt;p>Excel and R in particular have so much built-in functionality where you can say: &amp;ldquo;I want you to run this kind of analysis on this table and put it in a chart for me”. With more people writing code, these tools have to get better, or they’ll be replaced. Excel, R, Tableau, and all these commercial products must have more features than the competitors because that&amp;rsquo;s why we buy them. At the very least they have to be more useful than the other programs. The more people are using these tools means it&amp;rsquo;s going to drive more change and produce richer tools that help us understand the world even more.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>&amp;ldquo;Code gives us so many interesting ways to look at the software we have around us and how that software interacts.&amp;quot;&lt;/em>&lt;/p>
+&lt;/blockquote>
+&lt;p>Code gives us so many interesting ways to look at the software we have around us and how that software interacts. Code really is reshaping our world. Easy access to stuff like Excel democratizes our ability to understand what&amp;rsquo;s going on around us.&lt;/p>
+&lt;p>We can have concentrated communities – whether it&amp;rsquo;s via a collection of tags on Stack Overflow, specialized Stack Overflow websites like dba.stackexchange, or a Stack Overflow collective (a focused set of tags). You can go into these communities and interact with a group of people who are trying to either master that technology or help others master that technology. This ultimately drives forward excellence in how we&amp;rsquo;re interacting with the data and the world around us.&lt;/p>
+&lt;p>&lt;strong>MF: Your take on Excel and the democratization of this really spun this answer on its side for me because of course that type of scripting is programming/ coding. It&amp;rsquo;s not compiling and running, or building apps from scratch, but it’s still coding.&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Where do we, as developers and stewards in these communities, need to do better? What needs to happen to reduce some of the pain points and make our work more impactful?&lt;/strong>&lt;/p>
+&lt;p>JP: One of the things that comes up that we can do better at as developers is to remember that code is written at a certain point in time, which also includes the author&amp;rsquo;s mental state, and that it&amp;rsquo;s also written under a set of constraints.&lt;/p>
+&lt;p>Understanding all of that before you start trying to help someone, or at least assuming the sort of the best possible scenario, is really important when you&amp;rsquo;re trying to help. You don&amp;rsquo;t know what they&amp;rsquo;re doing, you don&amp;rsquo;t know what they&amp;rsquo;re thinking.&lt;/p>
+&lt;p>You have to understand the nuances. Really digging into the problem space and asking: what is this? What am I looking at? What are all of the tricky parts about it? Should I write down every assumption I have about this subject and then validate those?&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>&amp;ldquo;You should talk to security people early.&amp;quot;&lt;/em>&lt;/p>
+&lt;/blockquote>
+&lt;p>It&amp;rsquo;s not like you need to do big design up front where you produce a 600 page specification, but you do need to understand what needs to be implemented and what the actual thorny bits of the thing you have to implement are. Some of that boils down to finding who are impacted, and then to start asking hard questions.&lt;/p>
+&lt;p>Once you understand what people are actually trying to do you might realize there&amp;rsquo;s already code out there that solves this problem. I personally really like to borrow or buy code before I write it myself because odds are somebody else has thought about it more thoroughly than I have. Writing good code is really hard to do and writing secure good code is really, really hard.&lt;/p>
+&lt;p>My last thought on this is that you should talk to security people early. I ask them &amp;ldquo;Hey, we&amp;rsquo;re building X. What should I be terrified of?&amp;rdquo; And that usually leads to really interesting conversations.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>&amp;ldquo;I meet up with one of our security engineers every five or six weeks just to find out what&amp;rsquo;s worrying him.&amp;quot;&lt;/em>&lt;/p>
+&lt;/blockquote>
+&lt;p>I meet up with one of our security engineers every five or six weeks just to find out what&amp;rsquo;s worrying him. I tell him what we&amp;rsquo;re working on and most of the time he says: &amp;ldquo;you don&amp;rsquo;t need to worry about whatever you&amp;rsquo;re doing. That sounds reasonable”. But having those conversations frequently reminds the security people that you exist and they can help you and it&amp;rsquo;s also a reminder that they&amp;rsquo;re not a blocker to what you&amp;rsquo;re trying to do.&lt;/p>
+&lt;p>&lt;strong>MF: Having that be part of your workflow, where you’re integrated with a security team or security individuals, is a boon to the overall health of whatever it is you&amp;rsquo;re building, it really can&amp;rsquo;t be overstated.&lt;/strong>&lt;/p>
+&lt;p>JP: It really can&amp;rsquo;t. The most interesting part about this is getting to talk to people who know things that I don&amp;rsquo;t. I&amp;rsquo;m unlikely to become a security wizard, but I can talk to security people and understand a little bit more of what I need to do so that I don&amp;rsquo;t have to have a bad conversation with security people.&lt;/p>
+&lt;p>&lt;strong>MF: Where can people go to find more about you and about Stack Overflow? What cool things does Stack Overflow have that people might not know about that they should go sign up for and have their company start paying for?&lt;/strong>&lt;/p>
+&lt;p>JP: To find out more about Stack Overflow, people can head over to &lt;a href="https://stackoverflow.com/">stackoverflow.com&lt;/a>. You can ask questions. You can go to stackexchange.com to find out what a bunch of the different sites that we have available are. If you want to ask questions about Stack Overflow, we even have a site &lt;a href="https://meta.stackoverflow.com/">meta.stackoverflow.com&lt;/a> where you can talk about Stack Overflow using Stack Overflow.&lt;/p>
+&lt;p>If you would like to have Stack Overflow for your team, we have &lt;a href="https://stackoverflow.co/teams/pricing/">Stack Overflow for Teams&lt;/a>, there&amp;rsquo;s Stack Overflow Enterprise if you would like an entire Stack Overflow all of your own. And then there&amp;rsquo;s &lt;a href="https://stackoverflow.co/collectives/">Stack Overflow Collectives&lt;/a>, which is targeted at a set of tags.&lt;/p>
+&lt;p>To find out more about me, you can find me at &lt;a href="https://www.facility9.com/">facility9.com&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>MF: JP, this has been an absolute pleasure to have you on today. Thank you so much for coming by. Take it easy.&lt;/strong>&lt;/p>
+&lt;p>JP: Thank you so much for chatting with me. Take care.&lt;/p>
+&lt;section class="c-call-to-action-box c-call-to-action-box--blue">
+&lt;div class="c-call-to-action-box__content">
+&lt;h3 class="c-call-to-action-box__title">Subscribe to Random but Memorable&lt;/h3>
+&lt;p class="c-call-to-action-box__text">
+Listen to the latest security news, tips and advice to level up your privacy game, as well as guest interviews with leaders from the security community.
+&lt;/p>
+&lt;a href="https://randombutmemorable.simplecast.com/" class="c-call-to-action-box__link-href c-call-to-action-box__link-href--blue" data-event-category="CTA" data-event-action="call-to-action-button">
+Subscribe to our podcast
+&lt;/a>
+&lt;/div>
+&lt;/section></description></item><item><title>Developers deserve great UX, too</title><link>https://blog.1password.com/developers-deserve-great-ux/</link><pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate><author>Marc Mackenbach</author><guid>https://blog.1password.com/developers-deserve-great-ux/</guid><description>
+&lt;img src='https://blog.1password.com/posts/2022/developers-deserve-great-ux/header.png' class='webfeedsFeaturedVisual' alt='Developers deserve great UX, too' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p class="introduction">As a consumer, I&amp;rsquo;m a bit spoiled. When I pick up my phone to check my messages in the morning, I scan my fingerprint to get instant access to everything I’ve added to my homescreen. It&amp;rsquo;s my very own personalized magic portal to all my stuff.&lt;/p>
+&lt;p>Even the apps themselves are (with some exceptions) built to delight.&lt;/p>
+&lt;p>That&amp;rsquo;s not the case for most tools that developers use every day. Once you leave the consumer ecosystem and get to work in a terminal or an IDE, the experience changes. Because of our technical know-how, we think we need complexity. But we&amp;rsquo;re here to build the software that powers the world, not necessarily to remember an arcane command and copy access keys a million times every day.&lt;/p>
+&lt;p>When you need to authenticate in your terminal or IDE, why can&amp;rsquo;t you just use your fingerprint, watch, or face like we can do today in most consumer products?&lt;/p>
+&lt;p>There&amp;rsquo;s nothing I want more than to extend the magic that we take for granted as consumers to developers. And with last week&amp;rsquo;s release of &lt;a href="https://1password.com/developers">1Password Developer Tools&lt;/a>, starting with &lt;a href="https://blog.1password.com/1password-ssh-agent/">SSH&lt;/a> and &lt;a href="https://blog.1password.com/1password-cli-2_0/">CLI 2.0&lt;/a>, we’re off to a great start.&lt;/p>
+&lt;h2 id="the-modern-developer-experience-isnt-so-modern">The modern developer experience isn&amp;rsquo;t so modern&lt;/h2>
+&lt;p>My first development gig was building a web product for the Dutch Coffeecompany, in 2011. The way I interacted with SSH and Git back then is the same way we interact with SSH and Git today – 11 years later.&lt;/p>
+&lt;p>While every developer starts their day with a &amp;ldquo;git pull,&amp;rdquo; we as an industry seem to have accepted that this workflow is riddled with complexity.&lt;/p>
+&lt;p>Setting up SSH is a pain. I still have to Google the &lt;code>ssh-keygen&lt;/code> command every time I want to use it. Even the most experienced developers do, because it&amp;rsquo;s a complicated process. So much so that GitHub, GitLab, DigitalOcean, and others have an &lt;a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">entire section of documentation&lt;/a> dedicated to it.&lt;/p>
+&lt;p>And during that same setup process, I have to protect it with a strong passphrase (which I don&amp;rsquo;t want to enter every time I use it) and load it into an SSH Agent.&lt;/p>
+&lt;p>And do you know how many times I&amp;rsquo;ve accidentally copied my private key into GitHub instead of my public key? More times than I&amp;rsquo;d like to admit.&lt;/p>
+&lt;p>Why can&amp;rsquo;t this stuff just work like my phone? Why can&amp;rsquo;t I just authenticate with a fingerprint or facial recognition and get back to work?&lt;/p>
+&lt;p>I want better tools. I want that same kind of magic in my developer workflows.&lt;/p>
+&lt;h2 id="unnecessary-complexity-is-a-security-risk">Unnecessary complexity is a security risk&lt;/h2>
+&lt;p>Complicated workflows aren&amp;rsquo;t just a pain, they&amp;rsquo;re a security risk. There are so many choices you have to make during the &lt;code>ssh-keygen&lt;/code> process. What key type, RSA or elliptic curve? And what bit length/key strength? Do I protect the key with a passphrase? It&amp;rsquo;s easier not to use a passphrase, but that means I have to store the key as plaintext which is very insecure.&lt;/p>
+&lt;p>So, passphrase. It needs to be simple enough for me to remember, so I can type it in every time I need to (which is also insecure; because it&amp;rsquo;s a machine-to-machine secret, there&amp;rsquo;s no reason for me to even know it, let alone type it in). But it should also be hard to guess, which means it&amp;rsquo;ll be hard to remember. So I store it in 1Password, copy and paste it into my terminal every time I need to use it, and use SSH Agent &amp;hellip; but that just gives blanket approval to any process to use any key.&lt;/p>
+&lt;p>Now throw in the rest of my toolkit: testing tools, debugging tools, version control, and triggering CI/CD pipelines into my IDE. We made all these things to integrate all our workflows into one unified experience – but most of these tools still need a credential to authenticate! Which means we have to store credentials in environment variables or settings files – which, in turn, means that we&amp;rsquo;re either needlessly exposing secrets or constantly breaking flow to authenticate.&lt;/p>
+&lt;p>The problem is growing too, because the scope of who we consider to be a &amp;ldquo;developer&amp;rdquo; is growing. So many people use Git nowadays: designers, technical writers, managers, QA testers. GitHub alone has exceeded 73 million people using their platform to collaborate. So it&amp;rsquo;s more important than ever that we eliminate this &amp;ldquo;accepted complexity&amp;rdquo; and make these tools easy and accessible to everyone.&lt;/p>
+&lt;h2 id="were-building-consumer-grade-experiences-for-developers">We&amp;rsquo;re building consumer-grade experiences for developers&lt;/h2>
+&lt;img src="https://blog.1password.com/posts/2022/developers-deserve-great-ux/1Password_SSH.gif" alt="Animated depiction of SSH key flow in 1Password" title="Animated depiction of SSH key flow in 1Password" class="c-featured-image"/>
+&lt;p>So that&amp;rsquo;s why we&amp;rsquo;re starting with the biggest thing that every developer uses: Git. With the built-in SSH support in &lt;a href="https://1password.com/products/">1Password 8&lt;/a>, you can now generate a new SSH key with secure defaults, add it to GitHub, and push to a new git repo in less than a minute. All you have to do is authenticate with a fingerprint or your Apple Watch.&lt;/p>
+&lt;p>But that&amp;rsquo;s not all. If we&amp;rsquo;re serious about making developers' daily lives easier and more secure, then we should also look at how developers can use 1Password from their terminal. Which is why after 6 months of work and 1,344 commits we released 1Password CLI 2.0, which includes 49 significant improvements and that same biometric authentication magic.&lt;/p>
+&lt;p>This is why I was so excited to join 1Password: marrying brilliant UX with the carefully crafted developer tools that we built at &lt;a href="https://blog.1password.com/secrethub-acquisition/">SecretHub&lt;/a>. By bringing consumer-grade experiences to developers, we&amp;rsquo;re not only making their/our lives easier, we&amp;rsquo;re securing an aspect of enterprise security that&amp;rsquo;s been largely ignored to this point.&lt;/p>
+&lt;p>We&amp;rsquo;ll have a lot more to say about this, so if you&amp;rsquo;re interested in what we&amp;rsquo;re building, stay tuned for more updates on &lt;a href="https://1password.com/developers">Developer Tools&lt;/a>, including a deep(er) dive into SSH and the new CLI, the &lt;a href="https://twitter.com/hashtag/buildwith1password">#BuildWith1Password&lt;/a> challenge, and a lot more. Better yet, &lt;a href="https://1password.community/categories/ssh">join the community&lt;/a> to chat with other devs or &lt;a href="https://1password.com/dev-subscribe/">sign up for our developer newsletter&lt;/a> – we&amp;rsquo;ll send the latest news right to your inbox.&lt;/p>
+&lt;p>See you there!&lt;/p></description></item><item><title>SSH and Git, meet 1Password 🥰</title><link>https://blog.1password.com/1password-ssh-agent/</link><pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate><author>Dave Teare</author><guid>https://blog.1password.com/1password-ssh-agent/</guid><description>
+&lt;img src='https://blog.1password.com/posts/2022/1password-ssh-agent/header.png' class='webfeedsFeaturedVisual' alt='SSH and Git, meet 1Password 🥰' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p class="introduction">1Password now includes full support for SSH keys, providing the easiest and most secure way for developers to manage SSH keys and use Git in their daily workflow.&lt;/p>
+&lt;p>The magic of 1Password has always been making the secure thing to do the easy thing to do. Today I’m thrilled to announce that we’re bringing this magic to development teams everywhere with the all-new 1Password SSH Agent. 🦄&lt;/p>
+&lt;p>In today&amp;rsquo;s release 1Password can now create new SSH keys, keep them organized, and make them securely available everywhere you need them with just a few clicks. Best of all, each feature was built for developers, by developers, so they fit perfectly in your existing workflows.&lt;/p>
+&lt;p>Our private beta hit #1 on Hacker News last month so it seems we’re not the only ones that had this itch. 😍&lt;/p>
+&lt;div style="text-align: center !important;">
+&lt;iframe src="https://www.youtube-nocookie.com/embed/5EyrtO0Msgw" frameborder="0" allow="autoplay; encrypted-media" width="500px !important;" height="281px !important;" style="width: 500px !important; height: 281px !important; display: inline-block !important" allowfullscreen>&lt;/iframe>
+&lt;/div>
+&lt;h2 id="using-ssh-keys-is-now-as-easy-as-1-2-3">Using SSH keys is now as easy as 1, 2, 3&amp;hellip;&lt;/h2>
+&lt;p>Many toolchains and workflows rely on SSH keys. Everything from &lt;code>git&lt;/code> to &lt;code>scp&lt;/code> to logging into remote servers require properly configured SSH keys before being able to get your work done.&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;p>It goes well beyond &lt;code>ssh-keygen&lt;/code>, too. You need to protect the generated key, keep it backed up, and have it available when setting up new machines. Oh, and don’t forget to tell &lt;code>ssh-add&lt;/code> to remember the passphrase in the keychain on your new machine. I think it’s &lt;code>-K&lt;/code>.&lt;/p>
+&lt;p>1Password now takes care of all of this for you. Just follow these 3 steps:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Enable the SSH agent in 1Password &amp;gt; Preferences &amp;gt; Developer&lt;/p>
+&lt;img src='https://blog.1password.com/posts/2022/1password-ssh-agent/1PasswordSSHAgentcheckbox.png' alt='1Password SSH Agent preferences checkbox' title='1Password SSH Agent preferences checkbox' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;/li>
+&lt;li>
+&lt;p>Configure ssh to use 1Password&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">$ cat ~/.ssh/config
+Host *
+IdentityAgent &lt;span class="s2">&amp;#34;~/.1password/agent.sock&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>Generate an SSH key in 1Password and add the public key to each service (e.g. GitHub, GitLab, etc).&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>That’s it! And yes – I know that third step sounds like &lt;a href="https://www.reddit.com/r/funny/comments/eccj2/how_to_draw_an_owl/">draw the rest of the f**king owl&lt;/a>, but it’s truly just a couple of clicks.&lt;/p>
+&lt;p>Let’s see just how easy it is by setting up a new &lt;code>git&lt;/code> project.&lt;/p>
+&lt;h2 id="authorize-git-with-ease">Authorize Git with ease&lt;/h2>
+&lt;p>Joining a new project can be daunting. There are new people, new workflows, and a whole new codebase to learn. This is challenging enough, so the last thing you want to do is spend a day wrestling with SSH keys.&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;p>Thankfully, the magic of 1Password allows everyone on your team to get up to speed lightning quick. ⚡️ Two clicks and you’re done.&lt;/p>
+&lt;p>Seriously, in under a minute you can create a brand new SSH key &lt;em>and&lt;/em> an entirely new repo. 🤯&lt;/p>
+&lt;div style="text-align: center !important;">
+&lt;iframe src="https://www.youtube-nocookie.com/embed/hTwIsFKfjIs" frameborder="0" allow="autoplay; encrypted-media" width="500px !important;" height="281px !important;" style="width: 500px !important; height: 281px !important; display: inline-block !important" allowfullscreen>&lt;/iframe>
+&lt;/div>
+&lt;p>Here we see 1Password making it a snap to log in to GitHub like it always has, and then proceed to:&lt;/p>
+&lt;ul>
+&lt;li>Generate a new SSH key (either Ed25519 or RSA)&lt;/li>
+&lt;li>Fill the public key directly where its needed&lt;/li>
+&lt;li>Store the key securely, and&lt;/li>
+&lt;li>Authorize access using Touch ID when &lt;code>git&lt;/code> asks to sign a message&lt;/li>
+&lt;/ul>
+&lt;p>All that in 53 seconds. And I paused twice so I could zoom in and show you the details. 🙂&lt;/p>
+&lt;h2 id="more-secure-than-ssh-agent">More secure than &lt;code>ssh-agent&lt;/code>&lt;/h2>
+&lt;p>The default &lt;code>ssh-agent&lt;/code> allows any process on your system to sign messages with your private key. With the 1Password SSH Agent you authorize access explicitly, making things more secure and putting you in control.&lt;/p>
+&lt;p>Most days start with &lt;code>git pull&lt;/code> so let’s see how things will look while you’re enjoying your morning ☕️ or your Monster Energy Lo-Carb. 😈&lt;/p>
+&lt;p>When Git goes to pull from upstream, it will need access to your SSH key before it can connect to the server. 1Password will ask if you want to proceed and you can confirm with a fingerprint on Mac and Linux or with a smile on Windows.&lt;/p>
+&lt;img src="https://blog.1password.com/posts/2022/1password-ssh-agent/1PasswordCLITouchID.png" alt="1Password CLI Touch ID authorization" title="1Password CLI Touch ID authorization" class="c-featured-image"/>
+&lt;p>Once a process is authorized to use an SSH key, 1Password will sign messages using the key on behalf of the process. Only processes that you’ve explicitly authorized will have access, and the private portion of the key never leaves 1Password.&lt;/p>
+&lt;h2 id="safe-and-sound-all-within-1password">Safe and sound, all within 1Password&lt;/h2>
+&lt;p>Add your existing (modern) keys to 1Password or create new ones to replace your legacy ones, and easily find and organize them with the new dedicated category for SSH keys.&lt;/p>
+&lt;p>And since they’re all in 1Password, your SSH keys will always be available on all of your devices.&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;img src="https://blog.1password.com/posts/2022/1password-ssh-agent/1PasswordSSHkeyitem.png" alt="SSH key item in 1Password" title="SSH key item in 1Password" class="c-featured-image"/>
+&lt;img src="https://blog.1password.com/posts/2022/1password-ssh-agent/CreateandfillSSHkey.png" alt="Create and fill SSH key popup on GitHub using 1Password in your browser" title="Create and fill SSH key popup on GitHub using 1Password in your browser" class="c-featured-image"/>
+&lt;h2 id="available-today-in-1password-8">Available today in 1Password 8&lt;/h2>
+&lt;p>All of this and more is available today in 1Password 8.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="http://1password.com/downloads/windows">Download 1Password 8 for Windows&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://1password.com/downloads/mac/#beta-downloads">Download 1Password 8 for Mac (beta)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://1password.com/downloads/linux">Download 1Password 8 for Linux&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>See the &lt;a href="https://developer.1password.com/docs/ssh">1Password for SSH &amp;amp; Git&lt;/a> docs for more details, and please join us in our &lt;a href="https://1password.community/categories/ssh">SSH forum&lt;/a> or poke me &lt;a href="https://twitter.com/dteare">on Twitter&lt;/a> to share your experiences.&lt;/p>
+&lt;p>Also be sure to stop by our &lt;a href="https://www.reddit.com/r/1Password/comments/te7217/were_the_team_behind_1password_developer_tools/">AMA&lt;/a> on Thursday to meet the team behind these features. You’re also welcome to &lt;a href="https://1password.com/webinars/get-to-know-1password-developer-tools">join the devs for some command line and SSH demos&lt;/a> on March 30th.&lt;/p>
+&lt;h2 id="free-for-oss-teams">Free for OSS teams&lt;/h2>
+&lt;p>1Password would not be possible without the incredible work of the open source software community. From Rust and Golang to React and Neon – and many more – we’re thankful for these free software projects and are committed to giving back.&lt;/p>
+&lt;p>In that spirit and as our way of saying thanks, open source teams can get a free 1Password account simply by opening a pull request against the &lt;a href="https://github.com/1Password/1password-teams-open-source">1Password for Open Source Projects&lt;/a> repo. These accounts also include &lt;a href="https://1password.com/secrets">unlimited use of Secrets Automation&lt;/a>. To date, more than 360 open source projects are using 1Password.&lt;/p>
+&lt;h2 id="oh-and-one-more-thing">Oh, and one more thing…&lt;/h2>
+&lt;p>SSH keys aren&amp;rsquo;t the only secrets developers need for getting their work done. Developers need deployment keys, access tokens, bearer tokens, and many other secrets or they&amp;rsquo;re stuck. And these secrets are literally keys to various kingdoms so they need to be kept secure.&lt;/p>
+&lt;p>So what do you do? Sacrifice security and store them in plain text RC files? 😱 Abandon productivity and manually copy and paste them? 😩 Leave it for devops to worry about? 🤨&lt;/p>
+&lt;p>Not at all. Instead, integrate 1Password directly into your scripts and commands using &lt;code>op&lt;/code>, a new CLI tool that makes accessing secrets from the command line as easy as it is in your browser.&lt;/p>
+&lt;p>See &lt;a href="https://blog.1password.com/1password-cli-2_0/">Your CLI wish is our command&lt;/a> for details and join the thousands of developers and IT admins who are using 1Password CLI to script their workflows with secrets from 1Password.&lt;/p>
+&lt;p>Take care and stay safe out there. ❤️&lt;/p>
+&lt;img src="https://blog.1password.com/posts/2022/1password-ssh-agent/1PasswordSSHkeyauthorization.png" alt="Popup window to authorize SSH key use in 1Password using an Apple Watch" title="Popup window to authorize SSH key use in 1Password using an Apple Watch" class="c-featured-image"/></description></item><item><title>Your CLI wish is our command 🪄💫</title><link>https://blog.1password.com/1password-cli-2_0/</link><pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate><author>Dave Teare</author><guid>https://blog.1password.com/1password-cli-2_0/</guid><description>
+&lt;img src='https://blog.1password.com/posts/2022/1password-cli-2.0/header.svg' class='webfeedsFeaturedVisual' alt='Your CLI wish is our command 🪄💫' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p class="introduction">Our new command-line tool makes authorizing with services and securing your development toolchains easier than ever.&lt;/p>
+&lt;p>The magic of 1Password has always been making the secure thing to do the easy thing to do. Today I’m thrilled to announce that we’re bringing this magic to development teams everywhere with our new &lt;a href="https://blog.1password.com/1password-ssh-agent">1Password ssh agent&lt;/a> and &lt;code>op&lt;/code> command-line tool. 🦄&lt;/p>
+&lt;p>Use &lt;code>op&lt;/code> to level up your shell by seamlessly providing secrets to all the services and accounts you use in your workflow.&lt;/p>
+&lt;p>Here we see &lt;code>op&lt;/code> in action as we attempt to list our S3 buckets on AWS.&lt;/p>
+&lt;img src="https://blog.1password.com/posts/2022/1password-cli-2.0/1PasswordCLITouchIDauthorization.png" alt="Popup window authorizing terminal access to 1Password" title="Popup window authorizing terminal access to 1Password" class="c-featured-image"/>
+&lt;p>Did you see the magic? You need to look close as it’s easy to miss. 🕵🏻&lt;/p>
+&lt;p>You can catch a glimpse behind the curtain in the window title as &lt;code>aws&lt;/code> is not being run directly. It has been aliased.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">$ &lt;span class="nb">alias&lt;/span> &lt;span class="nv">aws&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;op run --env-file=&lt;/span>&lt;span class="nv">$HOME&lt;/span>&lt;span class="s2">/.config/op/aws-env -- aws&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now when &lt;code>aws&lt;/code> executes it does so from within an &lt;code>op run&lt;/code> context.&lt;/p>
+&lt;p>When it’s time to locate the access secrets &lt;code>aws&lt;/code> does what it always does, but there is no (plain text) &lt;code>~/.aws/credentials&lt;/code> RC file for it to use. It does, however, find some magical &lt;code>$AWS_ACCESS_KEY_ID&lt;/code> and &lt;code>$AWS_SECRET_ACCESS_KEY&lt;/code> &lt;del>beans&lt;/del> environment variables.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">$ cat &lt;span class="nv">$HOME&lt;/span>/.config/op/aws-env
+&lt;span class="nv">AWS_ACCESS_KEY_ID&lt;/span>&lt;span class="o">=&lt;/span>op://development/aws/access_key_id
+&lt;span class="nv">AWS_SECRET_ACCESS_KEY&lt;/span>&lt;span class="o">=&lt;/span>op://development/aws/secret_access_key
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>These variables use the &lt;a href="https://developer.1password.com/docs/cli/secrets-reference-syntax">secret reference syntax&lt;/a> to specify that their values need to be loaded from 1Password. Inside the &lt;code>Development&lt;/code> vault, within the &lt;code>AWS&lt;/code> item, we see the fields &lt;code>access_key_id&lt;/code> and &lt;code>secret_access_key&lt;/code> have the secrets we’re looking for.&lt;/p>
+&lt;img src="https://blog.1password.com/posts/2022/1password-cli-2.0/1PasswordAWSitem.png" alt="1Password item for Amazon Web Services" title="1Password item for Amazon Web Services" class="c-featured-image"/>
+&lt;p>Behind the scenes 1Password finds this item and confirms that your shell program is authorized before giving the secrets to &lt;code>op&lt;/code>, which in turn configures the ideal environment for &lt;code>aws&lt;/code> to run within.&lt;/p>
+&lt;p>Even after knowing how the magic works my mind is still blown about how cool this is. 🤯&lt;/p>
+&lt;p>Let’s see what else we can do with this sorcery.&lt;/p>
+&lt;h2 id="automatic-one-time-passwords">Automatic one-time passwords&lt;/h2>
+&lt;p>Many systems tried to overcome the inherent insecurity of plain text RC files by requiring you to enter a one-time password. While this improved security, it hurt productivity.&lt;/p>
+&lt;p>Thankfully &lt;code>op&lt;/code> gives you access to everything you need during development or when publishing new releases, including TOTP codes. Let’s see how this looks for publishing an NPM package.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">$ cat ~/.npmrc
+//registry.npmjs.org/:_authToken&lt;span class="o">=&lt;/span>&lt;span class="nv">$NPM_AUTH_TOKEN&lt;/span>
+$ cat ~/.config/op/npm-env
+&lt;span class="nv">NPM_AUTH_TOKEN&lt;/span>&lt;span class="o">=&lt;/span>npm_FDQkqhf78jAcledwxxxxxxxxxxxxxx3vXdSH
+$ &lt;span class="nb">alias&lt;/span> &lt;span class="nv">npm&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;op run --env-file=&lt;/span>&lt;span class="nv">$HOME&lt;/span>&lt;span class="s2">/.config/op/npm-env -- npm&amp;#34;&lt;/span>
+$
+$ npm publish --otp &lt;span class="k">$(&lt;/span>op item get npmjs --otp&lt;span class="k">)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>1Password will ask you to confirm access before proceeding. And if you have an Apple Watch you’re able to publish to NPM or anywhere else directly from your wrist! 😎&lt;/p>
+&lt;img src="https://blog.1password.com/posts/2022/1password-cli-2.0/1PasswordCLIAppleWatchauthorization.png" alt="Popup window authorizing 1Password CLI with Apple Watch" title="Popup window authorizing 1Password CLI with Apple Watch" class="c-featured-image"/>
+&lt;h2 id="an-op-ide">An OP IDE&lt;/h2>
+&lt;p>IDEs are so powerful these days and with extensions you can do practically anything without switching apps. Manage your CI/CD pipelines and Docker containers, send Slack messages, browse Elasticsearch logs, or run deployment commands using the integrated Terminal.&lt;/p>
+&lt;p>All of these need secrets to connect you before you can get your job done. With &lt;code>op&lt;/code> you can overpower your development environment and unlock an endless world of possibilities.&lt;/p>
+&lt;p>Here I am publishing my website, directly from within VSCode. 😍&lt;/p>
+&lt;img src="https://blog.1password.com/posts/2022/1password-cli-2.0/1PasswordVSCodeauthorization.png" alt="Popup window authorizing 1Password access in VSCode" title="Popup window authorizing 1Password access in VSCode" class="c-featured-image"/>
+&lt;p>And that&amp;rsquo;s just the tip of the iceberg. Check out Jody&amp;rsquo;s &lt;a href="https://www.youtube.com/watch?v=hghKTE_pUaQ">VSCode + 1Password extension demo&lt;/a> for some truly exceptional wizardry. 🧙🏼&lt;/p>
+&lt;h2 id="co-op-mode">Co-op mode&lt;/h2>
+&lt;p>With &lt;code>op&lt;/code> you can grab credentials from any vault you have access to. This is magical for personal projects and becomes legendary in team environments.&lt;/p>
+&lt;p>Secret references can be committed to source control without worrying about leaking secret information, enabling everyone to share environment configuration files.&lt;/p>
+&lt;p>Go even further by creating a vault for shared secrets and granting access to your entire team. They’ll automatically receive this vault during onboarding and won’t need to worry about where to find secrets or how to store them securely. This greatly simplifies setup and ensures developers get up to speed quickly.&lt;/p>
+&lt;p>You can also easily revoke access when someone moves on to another project. Even better, everyone else will automatically get the new credentials after you rotate them, without any interruptions. 🥰&lt;/p>
+&lt;h2 id="unleashed-in-1password-8">Unleashed in 1Password 8&lt;/h2>
+&lt;p>All of this and more is available today in 1Password 8.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://developer.1password.com/docs/cli/get-started/">Install the 1Password CLI&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://1password.com/downloads">Install 1Password 8&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>And be sure to check out our &lt;a href="https://blog.1password.com/1password-ssh-agent">SSH &amp;amp; Git, meet 1Password 😎&lt;/a> companion post that brings the same simplicity to SSH keys and Git setup as &lt;code>op&lt;/code> does to the command-line.&lt;/p>
+&lt;p>We hope you enjoy using these new tools as much as we enjoyed creating them for you. Please let us know in the &lt;a href="https://1password.community/categories/cli">CLI forum&lt;/a> or reach out to me directly &lt;a href="https://twitter.com/dteare">on Twitter&lt;/a>.&lt;/p>
+&lt;p>Also be sure to stop by our &lt;a href="https://www.reddit.com/r/1Password/comments/te7217/were_the_team_behind_1password_developer_tools/">AMA&lt;/a> on Thursday to meet the team behind these features. Moreover you’re welcome to &lt;a href="https://1password.com/webinars/get-to-know-1password-developer-tools">join our devs for some command-line demos and 1Password ssh agent usage&lt;/a> on March 30th.&lt;/p>
+&lt;h2 id="free-for-oss-teams">Free for OSS teams&lt;/h2>
+&lt;p>1Password would not be possible without the incredible work of the open source software community. From Rust and Golang to React and Neon – and many more – we’re thankful for these free software projects and are committed to giving back.&lt;/p>
+&lt;p>In that spirit and as our way of saying thanks, open source teams can get a free 1Password account simply by opening a pull request against our &lt;a href="https://github.com/1Password/1password-teams-open-source">1Password for Open Source Projects&lt;/a> repo. These accounts also include &lt;a href="https://1password.com/secrets">unlimited use of Secrets Automation&lt;/a>. To date, more than 360 open source projects are using 1Password.&lt;/p>
+&lt;h2 id="share-your-creations-and-win-">Share your creations and win! 🙌&lt;/h2>
+&lt;p>We can’t wait to see what you create with &lt;code>op&lt;/code>. The integration possibilities are endless and since &lt;code>op&lt;/code> is a full-powered CLI, you’re able to go well beyond secret retrieval:&lt;/p>
+&lt;ol>
+&lt;li>Invite and confirm new users 💌&lt;/li>
+&lt;li>Integrate with your identity provider using &lt;a href="https://support.1password.com/scim/">SCIM Bridge&lt;/a> 🌉&lt;/li>
+&lt;li>Deploy secrets to production environments with &lt;a href="https://1password.com/secrets/">Secrets Automation&lt;/a> 🔐&lt;/li>
+&lt;li>Share items with your team or externally with &lt;a href="https://developer.1password.com/docs/cli/reference/management-commands/item#item-share">secure share links&lt;/a> 🤗&lt;/li>
+&lt;li>Create, read, update, and delete items, vaults, or documents 🌈&lt;/li>
+&lt;/ol>
+&lt;p>Imagining these features linked together alongside some &lt;a href="https://blog.1password.com/1password-ssh-agent">1Password ssh agent&lt;/a> magic and other tools has me giddy with anticipation. It’s like Game of Thrones Season 4 all over again. 🙂&lt;/p>
+&lt;p>Please share your creations with us using &lt;a href="https://twitter.com/hashtag/BuildWith1Password">#BuildWith1Password&lt;/a> and win some great prizes! We have an upcoming post dedicated to the contest and anything you create and share now will qualify.&lt;/p>
+&lt;p>Oh, and if you have fun creating things and enjoy what we’re building here, be sure to say hi as &lt;a href="https://1password.com/jobs/">we’re hiring&lt;/a>. 👋&lt;/p>
+&lt;p>Take care and stay safe out there. ❤️&lt;/p></description></item><item><title>My Collab Lab story: nurturing underrepresented developers in tech</title><link>https://blog.1password.com/my-story-mentoring-at-the-collab-lab/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><author>April Bowler</author><guid>https://blog.1password.com/my-story-mentoring-at-the-collab-lab/</guid><description>
+&lt;img src='https://blog.1password.com/posts/2022/my-story-mentoring-at-the-collab-lab/header.svg' class='webfeedsFeaturedVisual' alt='My Collab Lab story: nurturing underrepresented developers in tech' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p class="introduction">The journey to becoming a developer has many paths. The most traditional is through attending a university and obtaining a computer science degree. However, many in the industry arrive via a different route.&lt;/p>
+&lt;p>In particular, those who come from traditionally underrepresented groups often find themselves entering this space later in life and with vastly different experiences than those from university.&lt;/p>
+&lt;p>But it can be tricky to enter the profession from an unconventional route because so many learning and training opportunities are restricted to university students. So where does this leave those who found their way into tech outside of the traditional path?&lt;/p>
+&lt;h2 id="introducing-the-collab-lab">Introducing The Collab Lab&lt;/h2>
+&lt;p>Luckily there are organizations like &lt;a href="https://the-collab-lab.codes/">The Collab Lab&lt;/a> that are trying to help fill in this gap. The Collab Lab exists to help early-career developers, especially ones from underrepresented groups, learn the skills used every day on development teams. These include pair programming, code reviews, writing great PR descriptions, merging, and demoing work.&lt;/p>
+&lt;p>As a developer who took an unconventional path, I was so excited to get involved with The Collab Lab and begin paying forward all the support and help I received along my journey.&lt;/p>
+&lt;p>My first official experience with the organization was through the Career Lab, which gives participants the opportunity to spend two weeks learning how to improve their LinkedIn profiles, tips on how to present their experience (i.e. tell their story), as well as the option to participate in mock interviews. The latter has two parts – a “job fit” interview and a technical interview which includes a small take-home task.&lt;/p>
+&lt;p>I volunteered to host the job fit interviews and was assigned to a couple of participants. I scheduled an hour for each of them and spent the first half in ‘interview’ mode before spending the second half providing feedback and answering questions. It was truly a lot of fun, and given that it’s so rare to get feedback in a real-world interview, the participants really appreciated the opportunity to practice in such a safe and low-pressure environment.  &lt;/p>
+&lt;h2 id="mentoring-the-summer-cohort">Mentoring the summer cohort&lt;/h2>
+&lt;p>My next experience was as a mentor for the summer cohort. I was assigned to a group along with two other mentors, one of which was the lead mentor who had volunteered with The Collab Lab before. Having three mentors for a team of four participants was helpful, as it offered different perspectives and spread out the responsibilities so that the time commitment from each mentor was reasonable. &lt;/p>
+&lt;p> The time commitment for a mentor is roughly five hours per week, but I found that most weeks didn’t require that full amount. The largest blocks of committed time were the 1-hour weekly sync calls, which occur on either Saturday or Sunday, and office hours which rotate through the mentors so they only occur once every three weeks.  &lt;/p>
+&lt;p>While the group works on their project, the mentors keep an eye on the Slack channel and GitHub repo for discussions and questions that the participants might need some help with. We also provide a code review towards the end of the week. The participants pair-program with each other and peer review the other team’s work, so the mentor-led reviews are more about verifying that the acceptance criteria were met and offering suggestions on ways to make their code more readable or efficient.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>The participants walk away from the experience with a taste of what it’s like to work on a development team.&lt;/em>&lt;/p>
+&lt;/blockquote>
+&lt;p>During the final two weeks, the participants decide what they want the app to look and feel like and then work on implementing those design choices. This gives them the ability to apply the collaborative skills they’ve been working on for the last six weeks and to self-organize this block of work. At the final weekly sync, they do one last demo of the finished application and celebrate having successfully shipped it.&lt;/p>
+&lt;p>The participants walk away from the experience with a taste of what it’s like to work on a development team. This gives them the knowledge to have informed conversations during job interviews, as well as the tools needed to hit the ground running when given that first opportunity.&lt;/p>
+&lt;h2 id="an-invaluable-experience">An invaluable experience&lt;/h2>
+&lt;p>  Throughout both of my experiences with The Collab Lab, I’ve been impressed by the level of information that’s provided to the volunteer mentors. The organization truly tries to value your time and provides the schedule, structure, and resources needed whenever they can so that all you have to do is show up and provide your knowledge and experience. They’re very open to suggestions for improvement and are always iterating to try and make the process even smoother.&lt;/p>
+&lt;p>The bottom line: it’s been as great an experience as I hoped it would be. The commitment is low enough to not interfere with other responsibilities and the return value of watching the participants grow in their collaborative skills and confidence is high. I was given a similar experience early in my career, so I can attest to how helpful it is to have the process demystified.  &lt;/p>
+&lt;p>I highly encourage other developers to become a mentor at The Collab Lab, as sharing your knowledge, experiences, and insight is so helpful to those just getting started.&lt;/p></description></item><item><title>1Password 8: The Story So Far</title><link>https://blog.1password.com/1password-8-the-story-so-far/</link><pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate><author>Michael Fey</author><guid>https://blog.1password.com/1password-8-the-story-so-far/</guid><description>
+&lt;img src='https://blog.1password.com/posts/2021/1password-8-so-far/header.png' class='webfeedsFeaturedVisual' alt='1Password 8: The Story So Far' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p class="introduction">Greetings everyone! With the recent launch of our Early Access preview of 1Password 8 on macOS I wanted to take a few minutes to pull back the curtain on this software development project that is over two years in the making. Before we get into that, though, I think a bit of backstory is warranted.&lt;/p>
+&lt;h2 id="1password-7-6-5-4">1Password 7, 6, 5, 4…&lt;/h2>
+&lt;img src='https://blog.1password.com/posts/2021/1password-8-so-far/1password-through-the-years.png' alt='1Password for Mac, through the years' title='1Password for Mac, through the years' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p>With a fifteen year history, 1Password has seen a lot of changes across all our supported platforms, but the way we’ve built our apps has largely been the same over those years. The very first version of 1Password was built by Dave and Roustem as a weekend project to help them with their day jobs of building websites. They got tired of manually filling in usernames, passwords, and contact information to test the sites they were building and figured they could build a tool to automate that. This weekend project quickly took over their day job and spawned a whole company and industry.&lt;/p>
+&lt;p>The first version of 1Password was a Mac app with a small team of four dedicated to it. When Apple announced the iPhone SDK that same team moved on to that platform and created the first version of 1Password for iPhone. At that time syncing your data across devices was largely relegated to using Dropbox to host an encrypted 1Password file that could be read and updated by any of your 1Password apps connected to your Dropbox account. Not long after, we expanded to include Windows and Android, hiring a developer for each of those platforms. They were given the file format specification, shown the Mac and iPhone apps, and given free-rein to create a 1Password app for their platforms. While that was happening, the original team went back to working on the Mac and iPhone apps. They added features, shipped updates, and continued on the path of making great software for Apple’s platforms. Meanwhile, the Android and Windows developers did the same, but in a manner that was very siloed from the other platform developers.&lt;/p>
+&lt;p>As time went on and those teams grew, that separation and mode of working remained largely the same. When I was leading the iOS team and later both the Mac and iOS team, I would routinely find out about things the Windows and Android team had done when I read about it on our blog. If I saw a new feature or improvement I thought we should add to one of my team&amp;rsquo;s apps I would do so, but in isolation from those other teams. This way of working wasn’t ideal, and it certainly wasn’t a bastion of cooperation and coordination.&lt;/p>
+&lt;p>History repeated itself six years ago when we introduced our hosted service, 1Password.com. The first version of the client/server application programming interfaces (APIs) were first built and refined using 1Password for Mac. Once things were stable they came to our iPhone app. We did a much better job documenting those APIs and file formats, but in the end we still delivered them to the Windows and Android teams, pointed them at what we’d built for the Apple apps, and sent them on their way to build it into their apps. Nonetheless, we shipped support for our new service across four platforms and things were good… for a while.&lt;/p>
+&lt;h2 id="the-1passwordcom-era">The 1Password.com Era&lt;/h2>
+&lt;p>One of the things that we were the most excited about with our own hosted service was that we were going to be able to move so much faster. We could build new features and roll them out across all our apps quickly, easily, and simultaneously. However, with four full stacks of client implementations of our server APIs, any changes needed to be coordinated across four teams. Four teams that were still operating independently. Each time our server team lead would come to the client leads and ask us how long until we could support some new feature, each of us said the same thing: “Now’s not a good time, we’re busy. Maybe in a few weeks?” And that estimate of a few weeks was different for each team. We kept advancing our apps with cool new features, but we weren’t advancing our service-based features. We were paralyzed. This continued until about three years ago when Jeff Shiner, our CEO, pulled all the leads together and effectively said, &amp;ldquo;This is ridiculous. Can we do better?”&lt;/p>
+&lt;h2 id="doing-better--n">Doing Better 👉 ⌘N&lt;/h2>
+&lt;p>We began exploring options for consolidating the non-user interface portions of 1Password into a single codebase that we could insert into each of our apps. The goal was to replace those four separate technology stacks — each with their own idiosyncrasies, differences, and frankly, bugs — with something that allowed us to move faster, together. With a couple false starts and technology changes under our belts we finally caught our stride at the beginning of last year. A small team, using existing pieces of various apps and projects, put together a proof of concept of a brand new 1Password app running on top of what we now call the 1Password Core.&lt;/p>
+&lt;p>On April 1st, 2020 we officially put our existing 1Password apps into maintenance mode, opened up our source code editors, and clicked &lt;strong>File&lt;/strong> &amp;gt; &lt;strong>New Project…&lt;/strong> on &lt;em>five&lt;/em> new 1Password apps.&lt;/p>
+&lt;h2 id="the-1password-core-era">The 1Password Core Era&lt;/h2>
+&lt;p>1Password 8 has been an incredibly ambitious project for a number of reasons. Beyond “simply” recreating an entire 1Password client app backend in a shared library, we had other requirements:&lt;/p>
+&lt;ol>
+&lt;li>We needed to create apps that look and feel like 1Password, but also look and feel at home on the platform where they’re running.&lt;/li>
+&lt;li>Because we were starting from scratch we needed to get all our platforms moving together and coordinating from the start.&lt;/li>
+&lt;li>We needed a design-led approach that was integrated with our development team much more tightly. The best software is built when the designers are sitting (virtually) right next to the developers in a collaborative environment.&lt;/li>
+&lt;li>Inconsistencies both small and large had crept into our apps over time. From small things like password strength being different between platforms to larger things like differences in search results and entire missing features. We needed to drive consistency and cohesion through our apps in a programmatic way.&lt;/li>
+&lt;/ol>
+&lt;h2 id="the-backend">The Backend&lt;/h2>
+&lt;p>As you may have read in some of our previous posts, we chose to write our shared backend library in Rust, a systems language known for its performance, security, and memory safety. It also ticked all the boxes for the platforms to which we were planning to deploy: macOS, iOS, Windows, Android, Linux, our browser extension, and our web app. Our Windows team had been working with Rust for a year before we started on the Core project which gave us a huge leg up. We also hired a large number of very talented Rust developers to help us achieve our goal.&lt;/p>
+&lt;p>The goal was to put every feasible piece of 1Password into the Core library, stopping just short of the user interface. This approach has allowed us to consolidate everything from the communication with the 1Password.com server, to the database handling, to permissions enforcement, to our cryptographic routines, and more in one place. It’s also allowed us to drive the consistency of user experience we need. For example, when you search for something in 1Password 8, the code that matches your search terms to your items is exactly the same across each platform, ensuring your results don’t vary from app to app.&lt;/p>
+&lt;h2 id="the-1password-8-frontends">The 1Password 8 Frontends&lt;/h2>
+&lt;p>When we set about choosing our frontend languages we took it platform by platform, but we did have an overall goal of reducing the number of frontends for which we needed to develop which would enable us to move faster.&lt;/p>
+&lt;h2 id="linux">Linux&lt;/h2>
+&lt;p>Our first proof of concept was on Linux, using web technologies that borrowed heavily from our browser extension implementation. We had packaged this proof of concept using Electron. With myriad windowing toolkits on Linux we decided to continue with that approach because it gave us a way to deliver a high quality application regardless of each distribution’s windowing environment.&lt;/p>
+&lt;h2 id="windows">Windows&lt;/h2>
+&lt;p>On Windows we did consider writing an app using the native Windows UI toolkit, but given our history of Windows development and reviewing the types of rich user interface experiences we wanted to provide with 1Password going forward we decided to take the web UI approach there as well.&lt;/p>
+&lt;h2 id="android">Android&lt;/h2>
+&lt;p>To achieve our goal of creating an app that looked and felt like it belonged on Android devices we decided to use a native Android toolkit for our frontend. When we started the project we were hoping to use Jetpack Compose, but as it was still prerelease and lacking some key features we needed, we decided to stick with the Android View framework. Happily, in the time since we started this project, Jetpack Compose has gone stable and we&amp;rsquo;ll be exploring how we can integrate it into our future work.&lt;/p>
+&lt;h2 id="ios">iOS&lt;/h2>
+&lt;p>Similar to Android, we knew that the best way to create an app that looked and felt like 1Password but also felt at home on the system was to use a native UI toolkit. We had two choices between UIKit and SwiftUI. SwiftUI was still early on in its lifespan, but in the spirit of skating to where the puck was going, we decided to go all in on Apple’s future-looking framework. We also knew that Apple was planning significant updates to SwiftUI that would most likely require us to increase the minimum supported version of this new app, but given the incredibly high adoption rates of new versions of iOS this wasn’t a significant concern. Using SwiftUI also gave us the opportunity to do something we’d never been able to do before: cover iOS and macOS with the same user interface code.&lt;/p>
+&lt;h2 id="macos">macOS&lt;/h2>
+&lt;p>The decision of how to build 1Password 8 for macOS was probably the most complicated one we had to make. Given our history of shipping great apps built using the native UI toolkit Apple provides, and the ability those toolkits give us to meet our goal of an app that feels at home on the system we knew wanted to continue that trend. We had a few goals that were at odds with each other:&lt;/p>
+&lt;ol>
+&lt;li>Reduce the number of frontend languages and toolkits.&lt;/li>
+&lt;li>Support as many versions of macOS as possible.&lt;/li>
+&lt;li>Create an app that looked and felt at home on macOS.&lt;/li>
+&lt;/ol>
+&lt;p>We could support as many versions of macOS as we wanted using Apple’s AppKit framework, but that meant adding another frontend toolkit to the mix. We could go all in on SwiftUI, but that meant reducing the number of operating system versions we could support. We could go all in on the same approach we were using for Linux and Windows, but that made it very difficult to create an app that looked and felt at home on macOS.&lt;/p>
+&lt;p>Ultimately we decided for a two-prong approach. We would build &lt;em>two&lt;/em> Mac apps. One written in SwiftUI that targeted the latest operating systems and another using web UI that allowed us to cover older OSes.&lt;/p>
+&lt;p>With all our frontend frameworks chosen we were off to the races!&lt;/p>
+&lt;h2 id="feature-teams">Feature Teams&lt;/h2>
+&lt;p>Our past approach to designing and building our apps, as I mentioned above, was much more piecemeal. A single designer would design a feature for a single platform and then move on to something else. With the power of the Core behind us and our trio of frontend frameworks in front of us, we wanted to take a much more unified approach to feature development. We came up with the concept of “feature teams” — ephemeral teams made up of a designer, three frontend developers, one or two Core developers, a project manager, a tech lead, and a member of the quality assurance team. Together this group takes a problem we’re looking to solve, defines the use cases and the scope of the project, wireframes possible solutions, and then dives into a full design and development cycle until the problems have been solved and the feature is complete.&lt;/p>
+&lt;p>We’ve had a tremendous amount of success with this approach because it’s allowed us to move all our apps forward together at the same time, creating cohesive user interfaces across our client apps that deviate where necessary to fit in with the paradigms, design patterns, and form factors of the system on where they’re being deployed.&lt;/p>
+&lt;h2 id="design--development">Design &amp;amp; Development&lt;/h2>
+&lt;p>While feature teams solved the problem of how to move together, we wanted to solve an ancillary problem at the same time which was how to create a design-led approach that connected our design team with our development team much more closely. Taking a chapter out of the design system playbook we decided to create a component library that would be matched across our frontends and design system. This allowed the designers to define reusable components that each of our frontends would implement and then use when building our features.&lt;/p>
+&lt;h2 id="cohesion">Cohesion&lt;/h2>
+&lt;p>The final requirement we had was one of consistency and cohesion across our apps. For that we turned to the concept of view models. We knew that the more we could use the Core to inform the user interfaces we were building, the more maintainable they would be in the long run. A good example of this is the new sidebar in 1Password 8. Early on we had the vaults in the sidebar grouped by &lt;strong>Private&lt;/strong> and &lt;strong>Shared&lt;/strong>. This led to some confusion during testing and we made the decision to change to single list of vaults. Because of how we had architected the interplay between the user interface and the Core, this change required no frontend changes at all. We changed the grouping in the Core and our frontends updated automatically.&lt;/p>
+&lt;h2 id="how-it-started">How It Started&lt;/h2>
+&lt;p>The first eleven months of development on our new apps went fairly well. We doubled the size of our development team while also making significant progress on five brand new 1Password apps covering iOS, Android, macOS, Windows, and Linux.&lt;/p>
+&lt;p>Here’s how our apps looked in February of this year:&lt;/p>
+&lt;p>
+&lt;img src='https://blog.1password.com/posts/2021/1password-8-so-far/linux.png' alt='1Password 8 for Linux, early prerelease screenshot' title='1Password 8 for Linux, early prerelease screenshot' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;img src='https://blog.1password.com/posts/2021/1password-8-so-far/windows.png' alt='1Password 8 for Windows, early prerelease screenshot' title='1Password 8 for Windows, early prerelease screenshot' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;img src='https://blog.1password.com/posts/2021/1password-8-so-far/android.png' alt='1Password 8 for Android, early prerelease screenshot' title='1Password 8 for Android, early prerelease screenshot' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;img src='https://blog.1password.com/posts/2021/1password-8-so-far/iOS.png' alt='1Password 8 for iOS, early prerelease screenshot' title='1Password 8 for iOS, early prerelease screenshot' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;img src='https://blog.1password.com/posts/2021/1password-8-so-far/macOS.png' alt='1Password 8 for macOS, early prerelease screenshot' title='1Password 8 for macOS, early prerelease screenshot' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;/p>
+&lt;p>However with a self-imposed ship date of September 2021, our timeline to bring these apps to stable was starting to look a bit tight.&lt;/p>
+&lt;h2 id="how-its-going">How It’s Going&lt;/h2>
+&lt;p>Earlier this year the leadership team sat down to review the remaining work and evaluate ways we could reduce our scope to ensure that we were able to meet our dates. We had already decided to defer a parallel project the previous fall to port our browser extension over to the Core backend, but we knew we had to cut more to bring focus to the needs of each of our apps.&lt;/p>
+&lt;p>The largest and most obvious thing that we focused on was the fact that we were building not one, but two apps for macOS. Despite the fact that SwiftUI allowed us to share more code than ever between iOS and macOS, we still found ourselves building separate implementations of certain components and sometimes whole features to have them feel at home on their target OS.&lt;/p>
+&lt;p>Ultimately we made the painful decision to stop work on the SwiftUI Mac app and focus our SwiftUI efforts on iOS, allowing the Electron app to cover all of our supported Mac operating systems. We could have started over with AppKit as the UI toolkit for our Mac app, but this would have put us significantly behind schedule and also would have added another frontend toolkit to maintain over the long term. This decision came with a big challenge, however, as we knew we still needed to deliver a top-tier user experience on macOS.&lt;/p>
+&lt;p>Shortly after this decision was made, we also made another change in direction which was to ship 1Password for Linux to stable much sooner than any of our other new apps. Because this was our first ever Linux app there were fewer constraints around migrating from previous versions, supporting App Store purchases, and other efforts that were still needed for our other platforms. We rallied a portion of our team to polish the app for Linux. These efforts included adding in platform specific integrations such as GNOME Keyring and KDE Wallet support, X11 clipboard integration and clearing, and System tray icon support for staying unlocked while closed. The response to our first ever Linux app and our first ever app based on the new architecture was overwhelmingly positive. We were both bolstered and energized to move on and finish the rest of our apps.&lt;/p>
+&lt;p>As of this writing we have 1Password available for all of our desktop platforms: Linux in stable, and Windows and macOS in Early Access.&lt;/p>
+&lt;h2 id="where-were-headed">Where We’re Headed&lt;/h2>
+&lt;p>Next up you’re going to see us complete the rollout of the remainder of our apps. We’ll be taking 1Password for Windows from Early Access to a stable launch, followed by the same for our app on macOS.&lt;/p>
+&lt;p>You’re also going to see our brand new mobile apps launch to Early Access and then stable after that with iOS landing first followed by Android.&lt;/p>
+&lt;p>Beyond that, though, is where the real fun begins for us and for you, our customers. With the incredibly strong foundation we&amp;rsquo;re building we will finally be able to turn almost any &amp;ldquo;what if…&amp;rdquo; into &amp;ldquo;let&amp;rsquo;s do it&amp;rdquo;.&lt;/p>
+&lt;h2 id="wrapping-it-up">Wrapping It Up&lt;/h2>
+&lt;p>1Password 8 has been a huge undertaking so far, but one that is setting the stage for the next decade of success for our clients apps. We remain committed to creating top tier user experiences on all of our platforms. We can&amp;rsquo;t wait for you to come along with us on this journey.&lt;/p></description></item><item><title>Introducing the 1Password Events API</title><link>https://blog.1password.com/introducing-events-api/</link><pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate><author>Akshay Bhargava</author><guid>https://blog.1password.com/introducing-events-api/</guid><description>
+&lt;img src='https://blog.1password.com/img/headers/news-header.svg' class='webfeedsFeaturedVisual' alt='Introducing the 1Password Events API' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p class="introduction">Visibility is critical to security and IT teams. If they can&amp;rsquo;t see what&amp;rsquo;s going on, they can&amp;rsquo;t act. So today we&amp;rsquo;re giving security and IT greater data visibility with &lt;a href="https://support.1password.com/events-reporting/">Events API&lt;/a>, a public REST API for 1Password Business customers.&lt;/p>
+&lt;p>In addition to the events that have always been available to admins, item usage and successful and failed sign-in attempts can now be routed to third-party platforms to create dashboards, alerts, and much more.&lt;/p>
+&lt;p>With greater visibility, security and IT teams can now correlate 1Password events with other data sources to gain a deeper understanding of how workers are using 1Password.&lt;/p>
+&lt;p>We’ve built the API with SOC (Security Operations Center) and SIEM (Security Information and Event Management) tools in mind – database tools which analyze and present time series event data with alerts, dashboards, visualization, and search. In fact, we’ve already created pre-built integrations with &lt;a href="https://www.splunk.com/">Splunk&lt;/a> and &lt;a href="https://www.elastic.co/">Elastic&lt;/a> (more on those in a minute).&lt;/p>
+&lt;h2 id="what-can-i-do-with-events-api">What can I do with Events API?&lt;/h2>
+&lt;p>With Events API streaming to a third-party tool, you can:&lt;/p>
+&lt;ul>
+&lt;li>Take decisive action using deeper forensic analysis with data correlation and enrichment from multiple apps.&lt;/li>
+&lt;li>Prevent attacks with proactive threat detection using custom, automated alerts.&lt;/li>
+&lt;li>Get valuable insights into 1Password usage via data visualization.&lt;/li>
+&lt;/ul>
+&lt;h2 id="what-events-does-events-api-include">What events does Events API include?&lt;/h2>
+&lt;p>1Password already logs and provides access to some events: failed sign-in attempts, and the most recent instance of someone accessing each item in a vault. &lt;a href="https://support.1password.com/reports/">All that is available as reports in 1Password Business&lt;/a>.&lt;/p>
+&lt;p>&lt;a href="https://support.1password.com/events-reporting/">Events API&lt;/a> broadens and deepens that access, providing events for both successful and failed sign-in attempts, and a historical log that details each and every time an item is used.&lt;/p>
+&lt;h2 id="how-does-it-work">How does it work?&lt;/h2>
+&lt;p>&lt;a href="https://support.1password.com/events-api-reference/">The Events API works in much the same way other 1Password integrations do&lt;/a>. Admins and owners can access the Events API by generating an access token, either from the Integrations Hub or the command line interface (CLI). Once created, you can create your own scripts to ingest the events into a SIEM or analytics tool of your choice. Or, you can use one of our pre-built integrations with Splunk or Elastic.&lt;/p>
+&lt;p>Of course, all this is done the 1Password way, with &lt;a href="https://support.1password.com/events-reporting-security">security as our top priority&lt;/a>.&lt;/p>
+&lt;h2 id="get-started-with-1password-for-splunk-and-elastic">Get started with 1Password for Splunk and Elastic&lt;/h2>
+&lt;p>Right now, each event included in the Events API returns the event itself (sign-in attempts and item usage) with contextual data. Many customers have been asking for this, and those customers can put the Events API to work right now (in fact, our beta partners have been doing so for months).&lt;/p>
+&lt;p>But we’re not stopping there. This release is only the first step in empowering security teams with greater visibility and actionable insights – and the existing Splunk and Elastic integrations make that possible right now. As of today, you can use &lt;a href="https://docs.splunk.com/Documentation/Splunk/8.2.0/Alert/Setupalertactions">Splunk triggers&lt;/a> to level up your threat detection, compliance, and breach investigation.&lt;/p>
+&lt;p>Here are a few examples of what you could do with Splunk triggers and the Events API:&lt;/p>
+&lt;ul>
+&lt;li>Receive an alert when a 1Password login exceeds set parameters&lt;/li>
+&lt;li>Receive an alert when a secret is copied, shared, used on a site, or accessed on the last day of a worker’s employment&lt;/li>
+&lt;li>Monitor usage of a particular item&lt;/li>
+&lt;li>Automate access control monitoring and reporting&lt;/li>
+&lt;li>Monitor user adoption&lt;/li>
+&lt;li>Correlate 1Password events like logins and secret usage with suspicious or malicious events to aid investigation&lt;/li>
+&lt;/ul>
+&lt;h2 id="more-to-come">More to come&lt;/h2>
+&lt;p>This is just the beginning for the Events API. In the near future, we plan to include more event types like changes to owner/admin groups and vault permissions (basically: audit events). And we’ll continue to build on this foundation with your feedback.&lt;/p>
+&lt;p>If you build something amazing, or just want to bounce ideas off of us, we’d love to hear about it. Give us a shout on &lt;a href="https://twitter.com/1password">Twitter @1Password&lt;/a>, or &lt;a href="https://1password.community/">head over to the 1Password community&lt;/a> to share your ideas.&lt;/p>
+&lt;p>You can get started today with the &lt;a href="https://splunkbase.splunk.com/app/5632">Splunk&lt;/a> and &lt;a href="https://github.com/1Password/events-api-elastic">Elastic&lt;/a> integrations. Or, you can &lt;a href="https://github.com/1Password/events-api-generic">try out this small Python script&lt;/a> to see how to make calls to the API to fetch sign-in and item usage events.&lt;/p></description></item><item><title>Hiding in plain sight: how secrets (mis)management is the next big cybersecurity threat</title><link>https://blog.1password.com/risks-of-mismanaging-corporate-secrets/</link><pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate><author>Andrew Zangre</author><guid>https://blog.1password.com/risks-of-mismanaging-corporate-secrets/</guid><description>
+&lt;img src='https://blog.1password.com/posts/2021/secrets-management-report/header.svg' class='webfeedsFeaturedVisual' alt='Hiding in plain sight: how secrets (mis)management is the next big cybersecurity threat' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p class="introduction">With the recent launch of &lt;a href="https://blog.1password.com/introducing-secrets-automation/">1Password Secrets Automation&lt;/a>, we were eager to learn more about current habits and feelings related to secrets management – good, bad, and everything in between – to help illustrate the problem and the risks involved. We surveyed 500 businesses on the topic, and today we’re excited to share our findings in a new report.&lt;/p>
+&lt;p>Today&amp;rsquo;s high-tech ecosystems involve thousands of vulnerable secrets, which are often spread out across multiple services with no visibility or auditability. To &lt;a href="https://1password.com/files/1Password-How-To-Avoid-A-Data-Breach.pdf">avoid a data breach&lt;/a>, these need to be encrypted and delivered to machines and services safely; but as the report shows, there’s a long way to go. We’ve summarized some of the key takeaways below, or you can &lt;a href="https://1password.com/resources/risks-of-mismanaging-corporate-secrets/">download the report&lt;/a> to read the complete findings.&lt;/p>
+&lt;h2 id="do-you-know-where-your-secrets-are">Do you know where your secrets are?&lt;/h2>
+&lt;p>Around 80 percent of IT and DevOps teams are not managing their secrets properly – think API keys, tokens, and certificates. These secrets let a database admin access a database, an app access another app, and so on. Secrets are the lifeblood of your growing infrastructure. And as you grow, develop, and deploy across your technology, you’re creating a long trail of insecure secrets that are stashed wherever it happens to be convenient.&lt;/p>
+&lt;p>It’s far more complex than it used to be, even for non-tech companies. Reliance on more cloud applications is a major source of this new stress, according to our report. It’s a bigger problem than just managing them; many teams don’t even know where secrets are. Half of IT/Dev workers don’t know how many locations their company secrets are scattered across, with too many to count.&lt;/p>
+&lt;h2 id="productivity-pains">Productivity pains&lt;/h2>
+&lt;p>Growing complexities have turned secrets management into a daily stress and productivity drain. The majority of IT/DevOps leaders find their work is disrupted at least daily so they can track down or manage their company’s secrets, and a third say it’s the worst part of their day. Some individual workers are disrupted four-plus times a day.&lt;/p>
+&lt;p>This stress can naturally lead to mismanagement of secrets, as well as larger issues with work quality and morale. Poor habits that form along the way put these secrets — and by extension, the company — at risk.&lt;/p>
+&lt;h2 id="poor-habits-cause-breaches">Poor habits cause breaches&lt;/h2>
+&lt;p>We call them “secrets” for a reason. But workers (and leaders, for that matter) are not protecting them like secrets. In fact, 60 percent of IT/DevOps organizations have experienced secrets leakage in some form.&lt;/p>
+&lt;p>Paired with the stress of managing them properly, a lack of education around proper secrets management has allowed dangerous habits to form, including:&lt;/p>
+&lt;ul>
+&lt;li>Reusing secrets across projects&lt;/li>
+&lt;li>Using the same secrets in both production and testing/staging&lt;/li>
+&lt;li>Storing secrets in shared or unsecured spreadsheets&lt;/li>
+&lt;li>Sending secrets over email, chat, and text&lt;/li>
+&lt;li>Former employees maintaining access to secrets&lt;/li>
+&lt;/ul>
+&lt;p>Our report shows the extent of these (mis)management habits, and the potential cost of breaches that can result.&lt;/p>
+&lt;h2 id="taking-control-of-your-secrets">Taking control of your secrets&lt;/h2>
+&lt;p>All of this secret sprawl leaves company systems and data more vulnerable than ever. But 70 percent of U.S. workers believe it falls solely on their company to protect work accounts from an attack. This has created quite the dilemma.&lt;/p>
+&lt;p>An improved &lt;a href="https://1password.com/resources/culture-of-security/infographic-culture-of-security.pdf?utm_ref=1-for-business">culture of security&lt;/a> should be a priority to help reverse this trend; workers need to do their part to keep secrets secure, and be mindful of best security practices in all they do. The right tool, along with improved education and awareness, can make the secure way to work also the easiest way. Just as 1Password helps employees manage their passwords, &lt;a href="https://1password.com/products/secrets/">1Password Secrets Automation&lt;/a> helps protect infrastructure secrets and deliver them – securely – where they’re needed.&lt;/p>
+&lt;p>We hope you’ll find some valuable insights in our report that you can share with your team and use to evaluate your own secrets management practices. Thanks for reading!&lt;/p>
+&lt;section class="c-call-to-action-box c-call-to-action-box--blue">
+&lt;div class="c-call-to-action-box__content">
+&lt;h3 class="c-call-to-action-box__title">Download the full report&lt;/h3>
+&lt;p class="c-call-to-action-box__text">
+Infrastructure secrets are a major security liability for today’s businesses. Read the full report to find out why secrets (mis)management could be putting your company data at risk.
+&lt;/p>
+&lt;a href="https://1password.com/resources/risks-of-mismanaging-corporate-secrets/" class="c-call-to-action-box__link-href c-call-to-action-box__link-href--blue" data-event-category="CTA" data-event-action="call-to-action-button">
+Download
+&lt;/a>
+&lt;/div>
+&lt;/section></description></item><item><title>WWDC21: Virtual Conference, Redux</title><link>https://blog.1password.com/wwdc21/</link><pubDate>Fri, 11 Jun 2021 00:00:00 +0000</pubDate><author>Michael Fey</author><guid>https://blog.1password.com/wwdc21/</guid><description>
+&lt;img src='https://blog.1password.com/posts/2021/wwdc21/header.png' class='webfeedsFeaturedVisual' alt='WWDC21: Virtual Conference, Redux' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p class="introduction">Apple’s second fully-remote Worldwide Developer Conference kicked off this week and, as always, our Apple development and design teams have been excitedly studying the documentation and sessions all week.&lt;/p>
+&lt;p>For the last year and change, Apple has been perfecting the art of transforming their typical in-person keynotes into highly polished tours through their incredible campus and the future of software on their platform. Even though we’re all at home, Apple still manages to reach through the screen and pull us into the excitement and the possibilities that make WWDC one of our favorite developer events of the year.&lt;/p>
+&lt;p>One of my most-loved things about WWDC is how we challenge ourselves to see just how quickly we can take the new technologies Apple is touting and apply them to 1Password. This year was no different. In fact, you may have already seen some of what our amazing &lt;strong>Browser Experience&lt;/strong> team was able to do &lt;a href="https://www.macrumors.com/2021/06/08/1password-teases-safari-on-ipados-15/">&lt;em>by the end of the day on Monday&lt;/em>&lt;/a>.&lt;/p>
+&lt;h2 id="safari-web-extensions-on-ios-and-ipados">Safari Web Extensions on iOS and iPadOS&lt;/h2>
+&lt;p>I’ll be honest, this one caught me totally by surprise. We’ve been working on unifying our browser experience for the last couple years and with iOS 15 we’re taking a big leap forward with the launch of 1Password for Safari on iOS and iPadOS. Being able to bring some incredible features like virtual payment cards from Privacy, smart password creation, and our inline menu to iOS is really a dream come true.&lt;/p>
+&lt;img src='https://blog.1password.com/posts/2021/wwdc21/1password_on_ipad_small.png' alt='1Password in the browser on iPad' title='1Password in the browser on iPad' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;h2 id="live-text--logins">Live Text 👉 Logins&lt;/h2>
+&lt;p>We all know someone who has sticky notes at the bottom of their monitor, or have been to venues with a Wi-Fi password on a whiteboard. With iOS 15, 1Password will be able to use the new &lt;strong>Live Text&lt;/strong> feature along with data detectors to intelligently and automatically create Login items! We’ve been saying &lt;a href="https://www.youtube.com/watch?v=mcly2-b1W20">“no more sticky notes”&lt;/a> for a long time; now you’ll have the tools you need to make that a reality. And yes, it’s just as magical in action as it sounds:&lt;/p>
+&lt;p>
+&lt;video class="round shadow" style="display: block; margin: auto; padding: 0;"loop="loop" playsinline="" width="100%" alt='' controls>
+&lt;source src="https://blog.1password.com/posts/2021/wwdc21/live-text-in-1password-ios15.mp4" type="video/mp4" />
+&lt;/video>
+&lt;/p>
+&lt;h2 id="drag-and-drop">Drag and Drop&lt;/h2>
+&lt;p>Support for drag and drop on Apple platforms has a rich history and it’s one we’ve always embraced in our apps. Coming this fall drag and drop will land in 1Password for iOS, enabling you to move your items around and fill your information into other apps on your iPhone or iPod touch. Not only do we love how it feels to drag and drop information between apps, but the security properties of it are just fantastic.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Moving Items&lt;/th>
+&lt;th>Dragging to Other Apps&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;p>
+&lt;video class="round shadow" style="display: block; margin: auto; padding: 0;"loop="loop" playsinline="" width="100%" alt='' controls>
+&lt;source src="https://blog.1password.com/posts/2021/wwdc21/drag-to-move.mp4" type="video/mp4" />
+&lt;/video>
+&lt;/p>
+&lt;/td>
+&lt;td>
+&lt;p>
+&lt;video class="round shadow" style="display: block; margin: auto; padding: 0;"loop="loop" playsinline="" width="100%" alt='' controls>
+&lt;source src="https://blog.1password.com/posts/2021/wwdc21/drag-to-other-apps.mp4" type="video/mp4" />
+&lt;/video>
+&lt;/p>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="quick-notes">Quick Notes&lt;/h2>
+&lt;p>I use the Notes app every single day. It‘s my todo list, blog post editor, bullet journal, and all around digital notebook. I love the idea of using Quick Notes to easily get content from my apps into Notes, and we wanted to make sure 1Password works there as well!&lt;/p>
+&lt;p>
+&lt;video class="round shadow" style="display: block; margin: auto; padding: 0;"loop="loop" playsinline="" width="100%" alt='' controls>
+&lt;source src="https://blog.1password.com/posts/2021/wwdc21/quick-notes-in-1password-ios15.mp4" type="video/mp4" />
+&lt;/video>
+&lt;/p>
+&lt;h2 id="home-screen-widgets-on-ipad">Home Screen Widgets on iPad&lt;/h2>
+&lt;p>I’m a big fan of widgets on iOS and was really pleased to see Apple bring Widgets to iPad in a form factor that really takes advantage of the screen real estate. Our awesome interns took it upon themselves to build out some proofs of concept for what a Watchtower widget and a one-time password widget could look like!&lt;/p>
+&lt;img src='https://blog.1password.com/posts/2021/wwdc21/widgets-on-ipad.png' alt='1Password widgets on iPad' title='1Password widgets on iPad' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;h2 id="apple-passwords-import-and-export">Apple Passwords Import and Export&lt;/h2>
+&lt;p>Switching over to the Mac, Apple added a brand new &lt;strong>Passwords&lt;/strong> section to System Preferences where you can access your passwords stored in iCloud Keychain. They &lt;em>also&lt;/em> added the ability to export your passwords to a common format.&lt;/p>
+&lt;img src='https://blog.1password.com/posts/2021/wwdc21/monterey-passwords-1.png' alt='Passwords on macOS Monterey' title='Passwords on macOS Monterey' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;img src='https://blog.1password.com/posts/2021/wwdc21/monterey-passwords-2.png' alt='Password export on macOS Monterey' title='Password export on macOS Monterey' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p>It’s a very simple CSV (comma separated value) file that contains the essentials for a collection of passwords: &lt;code>Title&lt;/code>, &lt;code>Website&lt;/code>, &lt;code>Username&lt;/code>, and &lt;code>Password&lt;/code>. This year the 1Password.com team got in on the WWDC excitement and added support for importing this new format!&lt;/p>
+&lt;img src='https://blog.1password.com/posts/2021/wwdc21/apple-password-import.png' alt='Import Apple Passwords on 1Password.com' title='Import Apple Passwords on 1Password.com' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p>We think the simplicity of this format is a really smart move, and to return the favor we are committing to adding the same export capability for Logins to 1Password over the next year.&lt;/p>
+&lt;h2 id="wrapping-it-up">Wrapping It Up&lt;/h2>
+&lt;p>WWDC21 has been a ton of fun for us this week. Not only did we get to play with a whole host of new APIs, but we were also a finalist for the Apple Design Awards! The next few months will be exciting ones for our developers and we’ll be ready when iOS 15 drops this fall. See you there!&lt;/p></description></item><item><title>Hello from SecretHub</title><link>https://blog.1password.com/secrethub-acquisition/</link><pubDate>Wed, 14 Apr 2021 00:00:00 +0000</pubDate><author>Marc Mackenbach</author><guid>https://blog.1password.com/secrethub-acquisition/</guid><description>
+&lt;img src='https://blog.1password.com/posts/2021/secrethub-acquisition/header.svg' class='webfeedsFeaturedVisual' alt='Hello from SecretHub' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p class="introduction">By now, you’ve heard the news. SecretHub, the company I founded in 2014, is joining 1Password. &lt;a href="https://secrethub.io/blog/secrethub-joins-1password/">I’ve shared my thoughts and next steps with SecretHub customers&lt;/a> – without whom I wouldn’t be here – but today I want to address you, 1Password customers.&lt;/p>
+&lt;p>I’ll start by saying this:&lt;/p>
+&lt;p>Boy, it’s good to be here. Let me tell you why.&lt;/p>
+&lt;h2 id="the-secrethub-story">The SecretHub story&lt;/h2>
+&lt;p>The first product we built at SecretHub was a secure, end-to-end encrypted file syncing service. While working on that application, we ran into an interesting problem.&lt;/p>
+&lt;p>Like everyone else, we were deploying more frequently than ever before, sometimes multiple times a day. And like every cloud application, our software needed a handful of credentials to access a database and a few APIs. But where to put those credentials?&lt;/p>
+&lt;p>We had two options. We could put the secrets in our code (or somewhere else where they would be visible to a number of people) but that would leave them exposed. Or we could restrict access to one person (me) and manually input the credentials each time we deployed.&lt;/p>
+&lt;p>Choosing security over speed, we opted for the manual route.
+I didn’t like having to choose between speed and security, so I started looking for solutions… only to realize that what I was looking for didn’t exist at the time.&lt;/p>
+&lt;p>So, much like &lt;a href="https://blog.1password.com/accel-partnership/">Dave Teare and Roustem Karimov built 1Password to solve their own password management problem way back in 2005&lt;/a>, we scratched our own itch and built the secrets management platform we desperately needed ourselves. SecretHub was born.&lt;/p>
+&lt;h2 id="building-for-developers">Building for developers&lt;/h2>
+&lt;p>Our mission was to bring great secrets management to every business, of every size and every budget. To accomplish that, SecretHub needed a killer user experience, including a proper interface.&lt;/p>
+&lt;p>That required more resources than we had at the time, so we focused instead on building a great tool for people who don’t particularly need an interface: software engineers. By focusing on developers, we could forego the visual experience and build great command-line tools.&lt;/p>
+&lt;p>That focus allowed us to think like developers, and for the questions we were asking to evolve. How do you deliver a secret from a central store to the application itself in a way that requires almost no changes or implementation effort? How do you do it in a way that’s consistent across all your environments, whether it’s development or production, or whether you’re working locally or in CI/CD, or on AWS?&lt;/p>
+&lt;p>Creating a consistent experience wasn’t just about usability; it also saved a ton of resources. By simplifying and standardizing, you free up a lot of time that IT would’ve otherwise spent doing training, integration, and maintenance. Not to mention drastically reducing incident response time.&lt;/p>
+&lt;h2 id="what-we-can-accomplish-together">What we can accomplish, together&lt;/h2>
+&lt;p>If you build a company that focuses on solving developer problems with simple, elegant command-line tools, but dream of having the resources to build a world-class user experience, who better to join forces with than 1Password?&lt;/p>
+&lt;p>We’d been a 1Password business customer for years. We knew what 1Password was: an exceptional user experience built on an uncompromising security architecture. The technical bits all fit.&lt;/p>
+&lt;p>More importantly, the philosophical stars aligned, too.&lt;/p>
+&lt;p>1Password believes that good security starts with making the most secure thing to do the easiest thing to do. Unfortunately, 96 percent of developers recognize that there’s a fundamental disconnect between security and productivity, according to a &lt;a href="https://go.shiftleft.io/developer-productivity-and-security-survey">2020 ShiftLeft report&lt;/a>.&lt;/p>
+&lt;p>And they’re right. There are always competing priorities, and security is usually the first thing to be cut in the pursuit of speed and agility. But by making it easier to do the secure thing than to do the insecure thing, you enhance security &lt;em>and&lt;/em> eliminate bottlenecks.&lt;/p>
+&lt;p>That’s what &lt;a href="https://1password.com/products/secrets/">Secrets Automation&lt;/a> does. It enables organizations not just to move faster without compromising security, but to move faster precisely &lt;em>because&lt;/em> you’re enhancing security. As someone who’s been in this game for a while, that’s exciting. It changes everything.&lt;/p>
+&lt;p>Now, let’s get to work.&lt;/p></description></item><item><title>Introducing 1Password Secrets Automation</title><link>https://blog.1password.com/introducing-secrets-automation/</link><pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate><author>Jeff Shiner</author><guid>https://blog.1password.com/introducing-secrets-automation/</guid><description>
+&lt;img src='https://blog.1password.com/posts/2021/secrets-automation-launch/header.svg' class='webfeedsFeaturedVisual' alt='Introducing 1Password Secrets Automation' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p class="introduction">Secure, orchestrate, and manage your company’s infrastructure secrets with 1Password Secrets Automation.&lt;/p>
+&lt;p>Today is a big day at 1Password. Today, we’re launching 1Password Secrets Automation, a new way to secure, orchestrate, and manage your company’s infrastructure secrets. With the addition of Secrets Automation, 1Password can now protect all of your company’s secrets in one place.&lt;/p>
+&lt;h2 id="passwords-and-infrastructure-secrets-all-in-one-place">Passwords and infrastructure secrets, all in one place&lt;/h2>
+&lt;p>Since 2005, 1Password has been keeping secrets safe for humans like you and me: our passwords, our credit cards, our personal documents.&lt;/p>
+&lt;p>Machines have secrets, too. These secrets give humans and machines access to other machines. They’re how a database admin accesses a database, or an app accesses another app. Secrets are the lifeblood of the growing organism that is your infrastructure.&lt;/p>
+&lt;p>And that organism is growing faster than anyone could&amp;rsquo;ve predicted. Every company is now, to some degree, a technology company. We&amp;rsquo;re all shipping software at an incredible pace. And we&amp;rsquo;re not doing it on a single cloud platform. We&amp;rsquo;re multi-cloud. We&amp;rsquo;re deploying continuously. We&amp;rsquo;re using a ton of microservices. And we have more engineers touching ops than ever before.&lt;/p>
+&lt;p>This explosion of entities – all of which need to communicate with one another – is creating an infrastructure that’s expanding quickly, and creating a long trail of insecure secrets that are stashed wherever it happens to be convenient. They’re in your CI/CD pipeline. They’re in (or next to) your source code.&lt;/p>
+&lt;p>Secrets Automation protects those secrets just as 1Password protects your passwords.&lt;/p>
+&lt;h2 id="what-is-secrets-automation">What is Secrets Automation?&lt;/h2>
+&lt;p>Listening to our customers isn’t a slogan at 1Password. It’s what got us here. It’s how we work.&lt;/p>
+&lt;p>When we asked our customers, they told us that they were already storing all their secrets – including infrastructure secrets – in 1Password. But they needed a way to get those secrets into their infrastructure to the machines and services that need them.&lt;/p>
+&lt;p>We built Secrets Automation to directly address these challenges. It delivers your infrastructure secrets when and where they’re needed. With Secrets Automation, you’re getting:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>The security of 1Password&lt;/strong>. Tokens, store credentials, and other secrets are fully encrypted, using the same security that makes 1Password the most trusted enterprise password manager.&lt;/li>
+&lt;li>&lt;strong>A single source of truth&lt;/strong>. With all of your secrets in one place, you gain complete visibility and auditability in a way that you can’t when secrets are spread out across multiple services.&lt;/li>
+&lt;li>&lt;strong>Granular access control&lt;/strong>. When access controls are too broad, companies have to resort to overly restrictive permission settings (which compromise productivity) or overly permissive settings (which compromise security).&lt;/li>
+&lt;li>&lt;strong>The usability of 1Password&lt;/strong>. A better experience means higher adoption, and higher adoption means better security. Developers deserve a good user experience, too.&lt;/li>
+&lt;li>&lt;strong>Integration with your existing tools&lt;/strong>. Secrets Automation integrates with HashiCorp Vault, Terraform, Kubernetes, and Ansible, with more integrations on the way. You’ll also find ready-to-use client libraries in Go, Node, and Python.&lt;/li>
+&lt;/ul>
+&lt;h2 id="get-started-for-free-or-see-secrets-automation-in-action">Get started for free, or see Secrets Automation in action&lt;/h2>
+&lt;section class="c-call-to-action-box c-call-to-action-box--blue">
+&lt;div class="c-call-to-action-box__content">
+&lt;h3 class="c-call-to-action-box__title">Get started for free&lt;/h3>
+&lt;p class="c-call-to-action-box__text">
+Secrets Automation is available right now, so you can [view the documentation](https://support.1password.com/secrets-automation/) and get started today.
+&lt;/p>
+&lt;a href="https://support.1password.com/secrets-automation/" class="c-call-to-action-box__link-href c-call-to-action-box__link-href--blue" data-event-category="CTA" data-event-action="call-to-action-button">
+Get started
+&lt;/a>
+&lt;/div>
+&lt;/section>
+&lt;p>For those who want to dive deeper into Secrets Automation, we recently hosted two webinars that are now available on demand.&lt;/p>
+&lt;p>&lt;strong>Webinar: Introduction to Secrets Automation&lt;/strong>&lt;/p>
+&lt;p>1Password Chief Product Officer Akshay Bhargava and Principal Product Manager Marc Mackenbach walk IT leaders and admins through the basics of Secrets Automation, followed by a live Q&amp;amp;A.&lt;/p>
+&lt;p>&lt;strong>&lt;a href="https://1password.zoom.us/webinar/register/6016167959176/WN_Oh5EXraCTTW9poYKbsdGBw">Watch now &amp;gt;&lt;/a>&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Webinar: Secrets Automation Technical Overview&lt;/strong>&lt;/p>
+&lt;p>Senior Product Manager Carson Brown and 1Password developer Jillian Wilson host a technical overview of Secrets Automation for developers eager to take a peek behind the curtain.&lt;/p>
+&lt;p>&lt;strong>&lt;a href="https://1password.zoom.us/webinar/register/4916170392382/WN_RLzd2aToRqOl9GwjwixF5w">Watch now &amp;gt;&lt;/a>&lt;/strong>&lt;/p></description></item><item><title>Introducing the “Save in 1Password” button in partnership with Ramp</title><link>https://blog.1password.com/save-in-1password-button-with-ramp/</link><pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate><author>Andrew Beyer</author><guid>https://blog.1password.com/save-in-1password-button-with-ramp/</guid><description>
+&lt;img src='https://blog.1password.com/posts/2021/save-in-1password-button-with-ramp/header.png' class='webfeedsFeaturedVisual' alt='Introducing the “Save in 1Password” button in partnership with Ramp' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p class="introduction">We’re thrilled to be partnering with &lt;a href="https://ramp.com/partners/1password">Ramp&lt;/a>, a corporate card and spend management platform, for the initial rollout of the “Save in 1Password” button.&lt;/p>
+&lt;p>The new “Save in 1Password” button makes it easier than ever to save payment cards and other details in 1Password.&lt;/p>
+&lt;h2 id="what-is-it">What is it?&lt;/h2>
+&lt;p>Starting today, Ramp customers will see the “Save in 1Password” button when they sign into their Ramp dashboard.&lt;/p>
+&lt;img src='https://blog.1password.com/posts/2021/save-in-1password-button-with-ramp/1-dashboard.png' alt='Screenshot showing the the ramp dashboard with a virtual card for intuit quickbooks. The Save in 1Password button appears under the card.' title='Screenshot showing the the ramp dashboard with a virtual card for intuit quickbooks. The Save in 1Password button appears under the card.' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p>If they have 1Password installed, when they click the button, 1Password will offer to save their payment card details and, from then on, 1Password will automatically surface those payment card details whenever an online purchase is made.&lt;/p>
+&lt;img src='https://blog.1password.com/posts/2021/save-in-1password-button-with-ramp/4-autofill.png' alt='Screenshot showing 1Password suggesting the previously saved ramp card as a payment option when checking out on the Intuit website.' title='Screenshot showing 1Password suggesting the previously saved ramp card as a payment option when checking out on the Intuit website.' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;h2 id="launching-with-ramp">Launching with Ramp&lt;/h2>
+&lt;p>Ramp offers corporate cards and spend management tools to help mid-sized companies accelerate growth without compromising on their finances.&lt;/p>
+&lt;p>If you’re a Ramp customer, the “Save in 1Password” button will let you quickly add your card details to 1Password so they’re at your fingertips the next time you’re making an important business purchase. And, of course, checking out with a Ramp card gives you total control over your corporate finances with smart limits, category controls, and more.&lt;/p>
+&lt;p>
+&lt;video class="round shadow" style="display: block; margin: auto; padding: 0;"loop="loop" playsinline="" width="100%" alt='' controls>
+&lt;source src="https://blog.1password.com/posts/2021/save-in-1password-button-with-ramp/ramp-demo.mp4" type="video/mp4" />
+&lt;/video>
+&lt;/p>
+&lt;p>Through our partnership with Ramp, expanding how we work with financial services and products is just another step toward making 1Password the world’s most-trusted password manager.&lt;/p>
+&lt;blockquote>
+&lt;p>“1Password is always on a mission to simplify online security. Partnering with Ramp to make it easier to use and secure payment details is a fantastic example of this, creating an effortless experience for businesses. Security can be simple with the right tools and the right mindset.”&lt;/p>
+&lt;/blockquote>
+&lt;p>– Jeff Shiner, 1Password CEO&lt;/p>
+&lt;p>To celebrate our partnership, Ramp customers signing up for a new 1Password Teams or 1Password Business account can get a $100 credit applied to their account.&lt;/p>
+&lt;blockquote>
+&lt;p>“We&amp;rsquo;re dedicated to building cutting-edge technology and incredible user experiences that maximize every dollar invested in a business. Our partnership with 1Password helps us continue to improve and deliver that experience. The &amp;ldquo;Save in 1Password&amp;rdquo; button further simplifies the process, letting companies focus on accelerating growth without compromising on their finances.”&lt;/p>
+&lt;/blockquote>
+&lt;p>– Karim Atiyeh, Ramp Co-founder and CTO&lt;/p>
+&lt;h2 id="how-does-it-help-businesses-and-their-customers">How does it help businesses and their customers?&lt;/h2>
+&lt;p>More than 80,000 businesses trust 1Password with their data, and 99.4% of them store a payment card in their 1Password account, making that card the default payment method for business purchases. If you’re an online service like a bank, placing the “Save in 1Password” button on your website means that card could be yours.&lt;/p>
+&lt;p>For customers, it just got even easier to save their details in 1Password with one click, keeping their data secure and accessible. No more waiting for a card to arrive in the mail, digging through their wallet, or missing out on rewards and benefits.&lt;/p>
+&lt;p>Implementing the “Save in 1Password” button is as simple as adding a snippet of code to your website. Because 1Password is secure by design, so is the API that powers the button. Payment card data is never stored on 1Password servers, the transaction takes place solely on the customer’s device, and no unencrypted data is transmitted.&lt;/p>
+&lt;h2 id="looking-to-the-future">Looking to the future&lt;/h2>
+&lt;p>We’re so excited about the huge potential of the “Save in 1Password” button. It’s not just for banks – the button will also simplify membership cards, reward cards, and any other details you want to make it easy for your customers to store and access when they’re on your website and beyond.&lt;/p>
+&lt;p>With all the possibilities, we’re looking forward to partnering with more businesses very soon. If you’d like to be next to add the “Save in 1Password” button to your website, &lt;a href="mailto:support+partnerships@1password.com">get in touch&lt;/a>.&lt;/p></description></item><item><title>1Password for Linux beta is now open 🎊 🐧 🎊</title><link>https://blog.1password.com/1password-for-linux-beta-is-now-open/</link><pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate><author>Dave Teare</author><guid>https://blog.1password.com/1password-for-linux-beta-is-now-open/</guid><description>
+&lt;img src='https://blog.1password.com/posts/2020/linux-beta/header.svg' class='webfeedsFeaturedVisual' alt='1Password for Linux beta is now open 🎊 🐧 🎊' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p class="introduction">Buckle up Linux Desktop users! We just opened an awesome ride that we&amp;rsquo;d love for you to join us on. 🎢 🙌🏼&lt;/p>
+&lt;p>I’m super excited to announce our first beta release of 1Password for Linux. That’s right – we now have a full-featured desktop app for Linux which you can use to quickly find, edit, and organize your items! And it looks gorgeous, too! 😍&lt;/p>
+&lt;img src='https://blog.1password.com/posts/2020/linux-beta/1password-linux-hero.png' alt='Main 1Password window, unlocked running on Ubuntu' title='Main 1Password window, unlocked running on Ubuntu' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p>Planned for official release early next year, we couldn’t wait to share the news with you so today we’re unveiling a beta so you can join in on the fun.&lt;/p>
+&lt;h2 id="a-true-linux-app">A true Linux app&lt;/h2>
+&lt;p>Our new app is built to meet the security and performance expectations of Linux users. Its backend is written completely in Rust, a secure systems programming language that has made a lot of waves in the Linux community. We’re especially proud to be using the incredible &lt;a href="https://github.com/briansmith/ring">ring crypto library&lt;/a> to power the end-to-end encryption that keeps your data safe.&lt;/p>
+&lt;p>We used this new foundation to bring you the 1Password experience you know and love to Linux and extended it further with:&lt;/p>
+&lt;ul>
+&lt;li>Quick Find and intelligent search suggestions 🔎&lt;/li>
+&lt;li>Beautiful new look and feel based on our new design language 😍&lt;/li>
+&lt;li>Move item dialog allows you to easily share items and see who they are shared with 👨‍👩‍👦‍👦&lt;/li>
+&lt;li>Data export ✈️&lt;/li>
+&lt;li>Unlock screen shows all your accounts and supports using different passwords 🔐&lt;/li>
+&lt;li>Watchtower Dashboard provides suggestions on how to improve your Security Score 🎯&lt;/li>
+&lt;/ul>
+&lt;p>In addition to these great improvements we’ve tailored the app to integrate with Desktop Linux:&lt;/p>
+&lt;ul>
+&lt;li>Simple and secure installs using apt and dnf package managers 📦&lt;/li>
+&lt;li>Automatic Dark Mode selection based on your GTK theme 🌓&lt;/li>
+&lt;li>Open network locations (FTP, SSH, SMB) 🌍&lt;/li>
+&lt;li>Tiling window manager support and descriptive window titles 🏠&lt;/li>
+&lt;li>Unlock with your Linux user account, including biometrics ☝️&lt;/li>
+&lt;li>System tray icon for staying unlocked while closed 📌&lt;/li>
+&lt;li>X11 clipboard integration and clearing ✂️&lt;/li>
+&lt;li>Keyboard shortcuts ⌨️&lt;/li>
+&lt;/ul>
+&lt;p>And this is just what’s available in the first beta. We have many more great things planned to make 1Password for Linux even greater. 😎&lt;/p>
+&lt;img src='https://blog.1password.com/posts/2020/linux-beta/devlists-penguin.png' alt='A Linux enthusiast reading a newspaper announcing 1Password for Linux' title='A Linux enthusiast reading a newspaper announcing 1Password for Linux' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;h2 id="beta-users-welcome">Beta users welcome!&lt;/h2>
+&lt;p>We’re really excited about what’s now possible with 1Password on Linux and all the incredible things we have planned.&lt;/p>
+&lt;p>As thrilled as we are it’s important to remember 1Password for Linux is still in beta. Expect some sharp turns and sudden drops so please keep your arms and legs in the vehicle at all times.&lt;/p>
+&lt;p>As such this initial release should be used &lt;strong>for testing and validation purposes only and is not suitable for business critical environments&lt;/strong>. For a stable experience on Linux you’ll want to use &lt;a href="https://support.1password.com/explore/whats-new-1password-x/">1Password X&lt;/a> in your browser.&lt;/p>
+&lt;h2 id="free-accounts-for-open-source-teams">Free accounts for open source teams&lt;/h2>
+&lt;p>Our new app is built on great open source projects like the Rust programming language for the underlying logic, and React for a responsive component-based UI.&lt;/p>
+&lt;p>Building an app for Linux wouldn’t have been possible without these giant shoulders to stand upon so we want to give back to the free software community. If you work on an open source team that needs a password manager, open a pull request in our &lt;a href="https://github.com/1Password/1password-teams-open-source">1Password for Open Source Projects&lt;/a> repo and we’ll give you and everybody on your team a free account.&lt;/p>
+&lt;p>Thank you so much for your contributions and making the world a better place. 🤗❤️&lt;/p>
+&lt;h2 id="apt-get-install-1password">apt-get install 1password&lt;/h2>
+&lt;p>If you’re excited to report issues, work with us to resolve them, and update to verify fixes, then you’re welcome to get onboard. See &lt;a href="https://support.1password.com/getting-started-linux/">Get to know 1Password for Linux&lt;/a> for installation and troubleshooting instructions.&lt;/p>
+&lt;p>We maintain signed apt and rpm package repositories for Debian, Ubuntu, CentOS, Fedora, and Red Hat Enterprise Linux, as well the &lt;a href="https://snapcraft.io/1password">Snap store&lt;/a>. We also have an AppImage for as-of-yet unsupported distributions. Let us know what distribution you use and how well 1Password works there.&lt;/p>
+&lt;p>We hope you are as excited about a 1Password Linux app as we are. To discuss this release, report issues, and talk with our development team, please join us in &lt;a href="https://1password.community/categories/linux-beta">our Linux forum&lt;/a>.&lt;/p>
+&lt;p>If you feel like you&amp;rsquo;ve won a big teddy bear when the ride&amp;rsquo;s over, consider spreading the love to our friends at the &lt;a href="https://www.linuxfoundation.org/about/donate/">Linux Foundation&lt;/a>.&lt;/p>
+&lt;img src='https://blog.1password.com/posts/2020/linux-beta/apt-get-1password.png' alt='Installing 1Password on Ubuntu using sudo apt-get install 1password' title='Installing 1Password on Ubuntu using sudo apt-get install 1password' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' /></description></item><item><title>WWDC20: Live from our living rooms</title><link>https://blog.1password.com/wwdc-2020-at-home/</link><pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate><author>Michael Fey</author><guid>https://blog.1password.com/wwdc-2020-at-home/</guid><description>
+&lt;img src='https://blog.1password.com/posts/2020/wwdc-2020/header.svg' class='webfeedsFeaturedVisual' alt='WWDC20: Live from our living rooms' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p class="introduction">Every June, our development team embarks on the great journey to sunny San Jose, California for Apple’s Worldwide Developers Conference. This year the journey was…shorter. In fact, it was just a few steps to the couch for the first remote WWDC. Amidst all the challenges facing the world, Apple did what they do best: Think different.&lt;/p>
+&lt;p>Credit to Apple – they’ve exceeded our expectations for a remote WWDC. The keynote was entertaining and informative. The sessions were clear and concise. And even the labs were great, with one-on-one time with Apple developers from the comfort of our homes.&lt;/p>
+&lt;p>While we’ve really missed hanging out with everyone in San Jose, this was easily a WWDC for the record books. Here are a few highlights from our week as WWDC draws to a close.&lt;/p>
+&lt;h2 id="macos-this-one-goes-to-11-">macOS: This one goes to 11 👩‍🎤&lt;/h2>
+&lt;p>I immediately installed the beta of macOS 11 Big Sur, and it’s no Big Sur-prise that I’ve been loving it ever since. The new design language, SwiftUI-based Control Center and Notification Center, and brand-new Safari are all incredibly exciting. And I can’t wait to get my hands on a Developer Transition Kit for the move to Apple silicon.&lt;/p>
+&lt;img src='https://blog.1password.com/posts/2020/wwdc-2020/Big_Sur_Icon.png' alt='Colorful Big Sur Icons' title='Colorful Big Sur Icons' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;p>&lt;em>macOS Big Sur introduces a new icon design language. Here’s a sneak peak of 1Password’s new icon in both light and dark modes, compared to its current icon.&lt;/em>&lt;/p>
+&lt;h2 id="ios-and-ipados">iOS and iPadOS&lt;/h2>
+&lt;p>Apple continues to move iOS and iPadOS forward in some wonderful ways. I’m delighted by the improved home screen using Widgets and the App Library, improvements to Siri and Dictation, and Safari’s new Password Monitoring and Privacy Reports – both things that are near and dear to our core beliefs. Also, phone calls won’t take over my whole screen anymore!&lt;/p>
+&lt;h2 id="1password-runs-well-on-the-betas">1Password runs well on the betas&lt;/h2>
+&lt;p>We know you’re just as excited to try out Apple’s new operating systems, and may even be considering the public betas when they’re available next month. I’m happy to report that 1Password runs really well on all developer betas: macOS 11 Big Sur, iOS 14, and iPadOS 14.&lt;/p>
+&lt;p>In fact, we wanted to show you a little something. Part of being a good citizen of an app ecosystem is embracing the platform tools wherever possible. One of the benefits of our doing this over the years is that we sometimes get new functionality with little to no extra work.&lt;/p>
+&lt;p>Take a look at how the new Scribble feature in iPadOS 14 works in the current version of 1Password.&lt;/p>
+&lt;p>
+&lt;img src='https://blog.1password.com/posts/2020/wwdc-2020/Scribble-demo-1.png' alt='Colorful Big Sur Icons' title='Colorful Big Sur Icons' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;img src='https://blog.1password.com/posts/2020/wwdc-2020/Scribble-demo-2.png' alt='Colorful Big Sur Icons' title='Colorful Big Sur Icons' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;img src='https://blog.1password.com/posts/2020/wwdc-2020/Scribble-demo-3.png' alt='Colorful Big Sur Icons' title='Colorful Big Sur Icons' style='max-width: 600px; width: 100%; display: inline-block; margin: 0 auto;' />
+&lt;/p>
+&lt;p>Handwriting a Title and a Note in a Secure Note item converts into regular typed text. We also wrote the note using Markdown syntax, which converted successfully into the text field, and then displayed as rich text when we were done editing. It just works™.&lt;/p>
+&lt;p>
+&lt;video class="round shadow" style="display: block; margin: auto; padding: 0;"loop="loop" playsinline="" width="100%" alt='' controls>
+&lt;source src="https://blog.1password.com/posts/2020/wwdc-2020/scribble.mp4" type="video/mp4" />
+&lt;/video>
+&lt;/p>
+&lt;h2 id="new-os-means-new-features">New OS means new features&lt;/h2>
+&lt;p>Scribble isn’t the only new thing we’re excited about. Our developers have been hard at work the past few days exploring the possibilities of what 1Password could do with some of the new features available to us, and I’d like to show you some of those ideas.&lt;/p>
+&lt;p>&lt;strong>Widgets&lt;/strong>&lt;/p>
+&lt;p>Widgets in iOS, iPadOS, and macOS are incredibly useful for seeing key bits of information quickly. This week, we put our heads together and created a widget that provides a glanceable report of your Watchtower stats. The best part is nearly all the code is shared between iOS, iPadOS, and macOS thanks to SwiftUI.&lt;/p>
+&lt;p>
+&lt;video class="round shadow" style="display: block; margin: auto; padding: 0;"loop="loop" playsinline="" width="100%" alt='' controls>
+&lt;source src="https://blog.1password.com/posts/2020/wwdc-2020/Widget-demo.mp4" type="video/mp4" />
+&lt;/video>
+&lt;/p>
+&lt;p>&lt;em>The 1Password widget shows you Compromised Sites in its small size, and its medium size reports an entire Watchtower summary. And when you&amp;rsquo;ve upped your security, Watchtower celebrates with you.&lt;/em>&lt;/p>
+&lt;p>&lt;strong>App Clips&lt;/strong>&lt;/p>
+&lt;p>App Clips are tiny portions of an iOS app that are available on demand from a website, NFC tag, or QR code. The team has put together an App Clip that creates a quick breach report from Watchtower – even without a 1Password membership. If anything comes up in the breach, you can download the rest of the app and start a free trial to improve your security with 1Password.&lt;/p>
+&lt;p>
+&lt;video class="round shadow" style="display: block; margin: auto; padding: 0;"loop="loop" playsinline="" width="100%" alt='' controls>
+&lt;source src="https://blog.1password.com/posts/2020/wwdc-2020/app-clip.mp4" type="video/mp4" />
+&lt;/video>
+&lt;/p>
+&lt;p>&lt;em>The 1Password App Clip lets you know when and where you&amp;rsquo;ve had compromised accounts.&lt;/em>&lt;/p>
+&lt;p>&lt;strong>Safari Web Extensions&lt;/strong>&lt;/p>
+&lt;p>Ever since we released 1Password X, we’ve been asked one question time and again: When is it coming to Safari? Thanks to the introduction of Safari Web Extensions at WWDC20, we were able to get 1Password X mostly running in Safari in a few short hours. We’re not making any promises yet, but the future for 1Password X in Safari is looking bright.&lt;/p>
+&lt;p>
+&lt;video class="round shadow" style="display: block; margin: auto; padding: 0;"loop="loop" playsinline="" width="100%" alt='' controls>
+&lt;source src="https://blog.1password.com/posts/2020/wwdc-2020/1passwordx-demo.mp4" type="video/mp4" />
+&lt;/video>
+&lt;/p>
+&lt;h2 id="thats-a-wrap">That’s a wrap&lt;/h2>
+&lt;p>Apple has given us a lot of exciting new technologies to craft the next features of 1Password, and we can&amp;rsquo;t wait to see how they evolve.&lt;/p>
+&lt;p>I look forward to sharing more with you later this fall when Apple’s newest operating systems are released to everyone.&lt;/p></description></item></channel></rss>
