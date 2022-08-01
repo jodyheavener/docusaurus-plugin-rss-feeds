@@ -19,7 +19,7 @@
   "dependencies": {
     "@docusaurus/core": "2.0.0-rc.1",
     "@docusaurus/types": "2.0.0-beta.22",
-    "@docusaurus/utils-validation": "2.0.0-beta.22",
+    "@docusaurus/utils-validation": "2.0.1",
     "tslib": "^2.4.0",
     "xml2js": "^0.4.23"
   },
