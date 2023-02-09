@@ -1,5 +1,7 @@
 # docusaurus-plugin-rss-feeds
 
+⚠️ This plugin is deprecated in favour of a more robust solution: [@1password/docusaurus-plugin-stored-data](https://www.npmjs.com/package/@1password/docusaurus-plugin-stored-data)
+
 Consume RSS feeds for rendering in Docusaurus
 
 ## Usage
